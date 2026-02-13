@@ -1,0 +1,22 @@
+services:
+  landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      - traefik_default
+    environment:
+      - NODE_ENV=production
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.marcelle-landing.rule=Host(`marcelle.srv756238.hstgr.cloud`)
+      - traefik.http.routers.marcelle-landing.tls=true
+      - traefik.http.routers.marcelle-landing.entrypoints=web,websecure
+      - traefik.http.routers.marcelle-landing.tls.certresolver=mytlschallenge
+      - traefik.http.services.marcelle-landing.loadbalancer.server.port=3000
+
+networks:
+  traefik_default:
+    external: true
+    name: root_default
