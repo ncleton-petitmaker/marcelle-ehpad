@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { VideoPlayer } from "./VideoPlayer";
 
 /* ------------------------------------------------------------------ */
 /*  ICON COMPONENTS                                                    */
@@ -203,12 +204,7 @@ export default function LandingPage() {
             <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">65 secondes pour comprendre comment Marcelle transforme votre hôtel.</p>
           </div>
           <div className="relative rounded-3xl overflow-hidden border border-white/[0.08] shadow-[0_20px_80px_rgba(0,0,0,0.5)]">
-            <iframe
-              src="https://stream.mux.com/TGgf3vbYq3MrFukxQ8aV00uMYtApobtcKcQPhTo1icB00"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              style={{ width: "100%", aspectRatio: "16/9", border: "none", display: "block" }}
-            />
+            <VideoPlayer playbackId="TGgf3vbYq3MrFukxQ8aV00uMYtApobtcKcQPhTo1icB00" />
           </div>
         </div>
       </section>
