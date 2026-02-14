@@ -130,10 +130,84 @@ function BentoCard({ children, className = "", variant = "white" }: { children: 
 /* ------------------------------------------------------------------ */
 
 export default function LandingPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Marcelle",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web, WhatsApp",
+    description:
+      "Agent IA hôtel et concierge IA WhatsApp pour les hôtels d'exception. Marcelle gère les conversations clients et centralise les connaissances d'équipe, directement sur WhatsApp.",
+    url: "https://marcelle.ai",
+    offers: {
+      "@type": "Offer",
+      category: "SaaS",
+      availability: "https://schema.org/InStock",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "30",
+    },
+    featureList: [
+      "Concierge IA WhatsApp 24h/24",
+      "Agent IA hôtellerie multilingue (50+ langues)",
+      "Assistant de procédures pour équipes hôtelières",
+      "Chatbot hôtel WhatsApp conforme RGPD & IA Act",
+    ],
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Comment fonctionne un agent IA dans un hôtel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Un agent IA hôtel comme Marcelle se connecte à WhatsApp et gère automatiquement les conversations avec vos clients. Il envoie un message de bienvenue personnalisé, répond aux questions sur les services, horaires et recommandations, dans plus de 50 langues et 24h/24. L'agent IA s'appuie sur la base de connaissances spécifique de votre hôtel pour fournir des réponses précises et contextualisées.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quel est le meilleur chatbot WhatsApp pour hôtel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Marcelle se distingue comme le chatbot WhatsApp conçu spécifiquement pour l'hôtellerie de luxe. Contrairement aux chatbots génériques, Marcelle combine deux fonctions en un seul agent IA : concierge pour les clients et assistant de procédures pour les équipes. Il est multilingue, disponible 24h/24, conforme RGPD et IA Act, et s'intègre directement sur WhatsApp sans application supplémentaire.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "L'intelligence artificielle peut-elle remplacer un concierge d'hôtel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "L'IA ne remplace pas le concierge humain, elle le complète. Un agent IA hôtellerie comme Marcelle prend en charge les demandes courantes (horaires, recommandations, informations pratiques) pour que votre équipe se concentre sur l'accueil humain et les situations complexes. Le résultat : 30 minutes gagnées par shift à la réception et une satisfaction client en hausse grâce à des réponses instantanées, même à 3h du matin.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Combien de temps faut-il pour mettre en place un agent IA dans un hôtel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La mise en place de Marcelle se fait en quelques jours seulement. L'équipe configure votre base de connaissances (procédures, services, recommandations), connecte WhatsApp, et l'agent IA est opérationnel. Aucune installation technique complexe n'est requise. Vos équipes et vos clients peuvent commencer à interagir avec Marcelle immédiatement.",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white font-[var(--font-inter)] selection:bg-[#C8A97E]/30 selection:text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* ========== NAVBAR ========== */}
-      <nav className="fixed top-0 inset-x-0 z-50 h-[72px] backdrop-blur-xl bg-[#0A0A0A]/80 border-b border-white/5">
+      <nav aria-label="Navigation principale" className="fixed top-0 inset-x-0 z-50 h-[72px] backdrop-blur-xl bg-[#0A0A0A]/80 border-b border-white/5">
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 md:px-8 lg:px-16">
           <span className="font-[var(--font-playfair)] text-xl font-bold tracking-tight">Marcelle</span>
           <div className="hidden md:flex items-center gap-8">
@@ -150,7 +224,7 @@ export default function LandingPage() {
       </nav>
 
       {/* ========== HERO ========== */}
-      <section className="relative pt-[72px] min-h-screen flex flex-col">
+      <section aria-label="Agent IA hôtel - Présentation de Marcelle" className="relative pt-[72px] min-h-screen flex flex-col">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#C8A97E]/[0.04] rounded-full blur-[120px]" />
         </div>
@@ -161,12 +235,12 @@ export default function LandingPage() {
               <Badge variant="accent"><ShieldIcon className="w-3.5 h-3.5" /> Conforme RGPD &amp; IA Act</Badge>
             </div>
             <h1 className="font-[var(--font-playfair)] font-bold leading-[1.05] tracking-tight text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem]">
-              Un agent, deux missions.
+              L&apos;agent IA hôtel
               <br />
-              <span className="text-[#C8A97E]">Votre hôtel, transformé.</span>
+              <span className="text-[#C8A97E]">qui transforme votre établissement.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed">
-              Marcelle est l&apos;agent IA qui répond à vos guests et accompagne vos équipes, directement sur WhatsApp. Une seule intelligence au service de deux excellences&nbsp;: l&apos;expérience client et la performance opérationnelle.
+              Marcelle est le concierge IA WhatsApp qui répond à vos guests et accompagne vos équipes, 24h/24. Une seule intelligence artificielle au service de deux excellences&nbsp;: l&apos;expérience client et la performance opérationnelle de votre hôtel.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <DemoTrigger className="group inline-flex items-center gap-2 bg-white text-[#0A0A0A] px-7 py-3.5 rounded-xl font-medium text-[15px] hover:bg-gray-100 transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.12)] cursor-pointer">
@@ -195,7 +269,7 @@ export default function LandingPage() {
       </section>
 
       {/* ========== VIDEO DEMO ========== */}
-      <section className="py-12 md:py-20 lg:py-28">
+      <section aria-label="Démonstration vidéo de l'agent IA hôtel Marcelle" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-10">
             <Badge variant="accent"><SparklesIcon className="w-3.5 h-3.5" /> Découvrir Marcelle</Badge>
@@ -211,14 +285,14 @@ export default function LandingPage() {
       </section>
 
       {/* ========== HOW IT WORKS ========== */}
-      <section id="comment" className="py-12 md:py-20 lg:py-28">
+      <section id="comment" aria-label="Comment fonctionne l'agent IA hôtellerie" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="accent"><SparklesIcon className="w-3.5 h-3.5" /> Simple &amp; efficace</Badge>
             <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">
-              100% automatisé,<br className="hidden md:block" /> du premier message au dernier
+              Un agent IA hôtellerie 100% automatisé,<br className="hidden md:block" /> du premier message au dernier
             </h2>
-            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Marcelle envoie automatiquement un message de bienvenue à chaque guest et gère l&apos;intégralité de la conversation. Vous n&apos;avez rien à faire.</p>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Notre concierge IA WhatsApp envoie automatiquement un message de bienvenue à chaque guest et gère l&apos;intégralité de la conversation. Vous n&apos;avez rien à faire.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {[
@@ -238,14 +312,14 @@ export default function LandingPage() {
       </section>
 
       {/* ========== DUAL PRODUCT SECTION ========== */}
-      <section id="features" className="py-12 md:py-20 lg:py-28">
+      <section id="features" aria-label="Fonctionnalités du concierge IA et assistant d'équipe" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="light">Deux missions, un seul agent</Badge>
             <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">
-              Marcelle intègre vos connaissances<br className="hidden md:block" /> et les redistribue
+              L&apos;intelligence artificielle de votre hôtel<br className="hidden md:block" /> au service de tous
             </h2>
-            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">À vos guests comme à vos équipes, via le canal qu&apos;ils utilisent déjà&nbsp;: WhatsApp.</p>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Marcelle intègre vos connaissances et les redistribue à vos guests comme à vos équipes, via le chatbot WhatsApp qu&apos;ils utilisent déjà.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
             {/* Guest concierge */}
@@ -254,10 +328,10 @@ export default function LandingPage() {
                 <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-[#25D366]/10 text-[#25D366] shrink-0"><WhatsAppIcon className="w-6 h-6" /></div>
                 <div>
                   <Badge variant="whatsapp">Pour vos guests</Badge>
-                  <h3 className="mt-3 font-[var(--font-playfair)] text-xl md:text-2xl font-semibold leading-snug text-[#0A0A0A]">Un concierge qui ne dort jamais</h3>
+                  <h3 className="mt-3 font-[var(--font-playfair)] text-xl md:text-2xl font-semibold leading-snug text-[#0A0A0A]">Un concierge IA WhatsApp qui ne dort jamais</h3>
                 </div>
               </div>
-              <p className="text-[#333] leading-relaxed mb-8">Vos clients posent des questions à toute heure, dans toutes les langues. Marcelle leur répond instantanément sur WhatsApp avec la précision d&apos;un concierge senior&nbsp;: recommandations, horaires, services, informations pratiques.</p>
+              <p className="text-[#333] leading-relaxed mb-8">Vos clients posent des questions à toute heure, dans toutes les langues. Ce chatbot hôtel WhatsApp leur répond instantanément avec la précision d&apos;un concierge senior&nbsp;: recommandations, horaires, services, informations pratiques.</p>
               <div className="space-y-4">
                 {[
                   { icon: <MessageIcon className="w-4 h-4 text-[#0A0A0A]" />, title: "Réponse instantanée, 24h/24", desc: "Plus aucune demande client ne reste sans réponse, même à 3h du matin." },
@@ -299,7 +373,7 @@ export default function LandingPage() {
       </section>
 
       {/* ========== PROBLEMS / SOLUTIONS BENTO ========== */}
-      <section id="solutions" className="py-12 md:py-20 lg:py-28">
+      <section id="solutions" aria-label="Problèmes résolus par l'agent IA hôtel" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="light">Le constat</Badge>
@@ -349,11 +423,11 @@ export default function LandingPage() {
       </section>
 
       {/* ========== BENEFITS ========== */}
-      <section id="avantages" className="py-12 md:py-20 lg:py-28">
+      <section id="avantages" aria-label="Avantages de l'agent IA pour hôtellerie" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="light">Pourquoi Marcelle</Badge>
-            <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">Six raisons de choisir Marcelle</h2>
+            <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">Six raisons de choisir cet agent IA pour votre hôtel</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {([
@@ -375,7 +449,7 @@ export default function LandingPage() {
       </section>
 
       {/* ========== RGPD & IA ACT ========== */}
-      <section className="py-12 md:py-20 px-4 md:px-8 lg:px-16">
+      <section aria-label="Conformité RGPD et IA Act de l'agent IA hôtel" className="py-12 md:py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <BentoCard variant="glass" className="p-8 md:p-12">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12">
@@ -396,17 +470,77 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ========== FAQ ========== */}
+      <section id="faq" aria-label="Questions fréquentes sur l'agent IA hôtel" className="py-12 md:py-20 lg:py-28">
+        <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
+          <div className="text-center mb-12 md:mb-16">
+            <Badge variant="accent"><SparklesIcon className="w-3.5 h-3.5" /> FAQ</Badge>
+            <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">
+              Questions fréquentes sur l&apos;agent IA hôtel
+            </h2>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">
+              Tout ce que vous devez savoir sur l&apos;intelligence artificielle appliquée à l&apos;hôtellerie.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {([
+              {
+                question: "Comment fonctionne un agent IA dans un hôtel ?",
+                answer:
+                  "Un agent IA hôtel comme Marcelle se connecte à WhatsApp et gère automatiquement les conversations avec vos clients. Il envoie un message de bienvenue personnalisé, répond aux questions sur les services, horaires et recommandations, dans plus de 50 langues et 24h/24. L'agent IA s'appuie sur la base de connaissances spécifique de votre hôtel pour fournir des réponses précises et contextualisées.",
+              },
+              {
+                question: "Quel est le meilleur chatbot WhatsApp pour hôtel ?",
+                answer:
+                  "Marcelle se distingue comme le chatbot WhatsApp conçu spécifiquement pour l'hôtellerie de luxe. Contrairement aux chatbots génériques, Marcelle combine deux fonctions en un seul agent IA : concierge pour les clients et assistant de procédures pour les équipes. Il est multilingue, disponible 24h/24, conforme RGPD et IA Act, et s'intègre directement sur WhatsApp sans application supplémentaire.",
+              },
+              {
+                question: "L'intelligence artificielle peut-elle remplacer un concierge d'hôtel ?",
+                answer:
+                  "L'IA ne remplace pas le concierge humain, elle le complète. Un agent IA hôtellerie comme Marcelle prend en charge les demandes courantes (horaires, recommandations, informations pratiques) pour que votre équipe se concentre sur l'accueil humain et les situations complexes. Le résultat : 30 minutes gagnées par shift à la réception et une satisfaction client en hausse grâce à des réponses instantanées, même à 3h du matin.",
+              },
+              {
+                question: "Combien de temps faut-il pour mettre en place un agent IA dans un hôtel ?",
+                answer:
+                  "La mise en place de Marcelle se fait en quelques jours seulement. L'équipe configure votre base de connaissances (procédures, services, recommandations), connecte WhatsApp, et l'agent IA est opérationnel. Aucune installation technique complexe n'est requise. Vos équipes et vos clients peuvent commencer à interagir avec Marcelle immédiatement.",
+              },
+            ]).map((item, i) => (
+              <details
+                key={i}
+                className="group border border-white/[0.08] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#C8A97E]/30"
+              >
+                <summary className="flex items-center justify-between cursor-pointer p-6 md:p-8 text-left">
+                  <h3 className="font-[var(--font-playfair)] text-base md:text-lg font-semibold leading-snug pr-4">
+                    {item.question}
+                  </h3>
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-white/[0.06] flex items-center justify-center text-[#C8A97E] transition-transform duration-300 group-open:rotate-45">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="px-6 md:px-8 pb-6 md:pb-8 -mt-2">
+                  <p className="text-white/50 leading-relaxed text-sm md:text-base">
+                    {item.answer}
+                  </p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ========== CTA ========== */}
-      <section id="demo" className="py-12 md:py-20 lg:py-28">
+      <section id="demo" aria-label="Demander une démonstration de l'agent IA hôtel" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <BentoCard variant="white" className="relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/5 via-transparent to-[#C8A97E]/10 pointer-events-none" />
             <div className="relative z-10 py-16 md:py-20 lg:py-24 px-8 md:px-16 text-center">
               <Badge variant="solid">Passez à l&apos;action</Badge>
               <h2 className="mt-6 font-[var(--font-playfair)] font-bold text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-[#0A0A0A]">
-                Offrez à votre hôtel<br className="hidden md:block" /> l&apos;intelligence qu&apos;il mérite
+                Offrez à votre hôtel<br className="hidden md:block" /> l&apos;agent IA qu&apos;il mérite
               </h2>
-              <p className="mt-4 text-base md:text-lg text-[#666] max-w-xl mx-auto leading-relaxed">Découvrez comment Marcelle peut transformer l&apos;expérience de vos guests et le quotidien de vos équipes. Démonstration personnalisée en 30&nbsp;minutes.</p>
+              <p className="mt-4 text-base md:text-lg text-[#666] max-w-xl mx-auto leading-relaxed">Découvrez comment notre intelligence artificielle peut transformer l&apos;expérience de vos guests et le quotidien de vos équipes. Démonstration personnalisée en 30&nbsp;minutes.</p>
               <div className="mt-10">
                 <DemoTrigger className="group inline-flex items-center gap-2 bg-[#0A0A0A] text-white px-8 py-4 rounded-xl font-medium text-[15px] hover:bg-[#1A1A1A] transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.15)] cursor-pointer">
                   Demander une démo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -419,19 +553,20 @@ export default function LandingPage() {
       </section>
 
       {/* ========== FOOTER ========== */}
-      <footer className="border-t border-white/[0.06] py-12 md:py-16">
+      <footer aria-label="Pied de page Marcelle" className="border-t border-white/[0.06] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
               <span className="font-[var(--font-playfair)] text-lg font-bold tracking-tight text-white">Marcelle</span>
-              <p className="mt-2 text-sm text-white/30">L&apos;agent IA pour les hôtels d&apos;exception. Concierge guest et assistant équipe, réunis sur WhatsApp.</p>
+              <p className="mt-2 text-sm text-white/30">Agent IA hôtel et concierge IA WhatsApp pour les hôtels d&apos;exception. Assistant d&apos;équipe et chatbot hôtelier, réunis sur WhatsApp.</p>
             </div>
-            <div className="flex flex-wrap gap-6 text-sm text-white/40">
+            <nav aria-label="Liens de pied de page" className="flex flex-wrap gap-6 text-sm text-white/40">
               <a href="#comment" className="hover:text-white/70 transition-colors">Comment ça marche</a>
               <a href="#features" className="hover:text-white/70 transition-colors">Fonctionnalités</a>
               <a href="#avantages" className="hover:text-white/70 transition-colors">Avantages</a>
+              <a href="#faq" className="hover:text-white/70 transition-colors">FAQ</a>
               <a href="#demo" className="hover:text-white/70 transition-colors">Contact</a>
-            </div>
+            </nav>
           </div>
           <div className="mt-10 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/20">&copy; {new Date().getFullYear()} Marcelle. Tous droits réservés.</p>

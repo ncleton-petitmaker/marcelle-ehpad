@@ -10,16 +10,46 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Marcelle - L'agent IA pour les hôtels d'exception",
+  title:
+    "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
   description:
-    "Un agent, deux missions. Concierge virtuel pour vos guests et assistant de procédures pour vos équipes, directement sur WhatsApp.",
+    "Marcelle est l'agent IA hôtel qui transforme l'expérience client et la gestion d'équipe. Concierge IA WhatsApp disponible 24h/24, multilingue, conforme RGPD. Chatbot hôtel WhatsApp conçu pour l'hôtellerie de luxe.",
+  keywords: [
+    "agent IA hôtel",
+    "agent IA hôtellerie",
+    "concierge IA WhatsApp",
+    "intelligence artificielle hôtel",
+    "chatbot hôtel WhatsApp",
+    "concierge virtuel hôtel",
+    "IA hôtellerie de luxe",
+    "assistant IA hôtel",
+    "WhatsApp hôtel",
+    "chatbot hôtelier",
+  ],
   robots: { index: true, follow: true },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
+  alternates: {
+    canonical: "https://marcelle.ai",
+  },
   openGraph: {
-    title: "Marcelle - L'agent IA pour les hôtels d'exception",
+    title:
+      "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
     description:
-      "Un agent, deux missions. Concierge virtuel pour vos guests et assistant de procédures pour vos équipes, directement sur WhatsApp.",
+      "Marcelle est l'agent IA hôtel qui transforme l'expérience client et la gestion d'équipe. Concierge IA WhatsApp disponible 24h/24, multilingue, conforme RGPD.",
+    url: "https://marcelle.ai",
+    siteName: "Marcelle",
     locale: "fr_FR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
+    description:
+      "Marcelle est l'agent IA hôtel qui transforme l'expérience client et la gestion d'équipe. Concierge IA WhatsApp disponible 24h/24, multilingue, conforme RGPD.",
   },
 };
 

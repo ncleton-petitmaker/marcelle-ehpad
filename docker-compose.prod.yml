@@ -10,7 +10,7 @@ services:
       - NODE_ENV=production
     labels:
       - traefik.enable=true
-      - traefik.http.routers.marcelle-landing.rule=Host(`marcelle.srv756238.hstgr.cloud`)
+      - traefik.http.routers.marcelle-landing.rule=Host(`marcelle.ai`) || Host(`www.marcelle.ai`) || Host(`marcelle.srv756238.hstgr.cloud`)
       - traefik.http.routers.marcelle-landing.tls=true
       - traefik.http.routers.marcelle-landing.entrypoints=web,websecure
       - traefik.http.routers.marcelle-landing.tls.certresolver=mytlschallenge
