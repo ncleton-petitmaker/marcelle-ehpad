@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { VideoPlayer } from "./VideoPlayer";
-import { DemoButtonLoader, DemoTrigger } from "./DemoButton";
+import { DemoTrigger } from "./DemoButton";
 
 /* ------------------------------------------------------------------ */
 /*  ICON COMPONENTS                                                    */
@@ -438,7 +438,6 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
-      <DemoButtonLoader />
     </div>
   );
 }
