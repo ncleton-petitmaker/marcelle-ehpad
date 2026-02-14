@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { VideoPlayer } from "./VideoPlayer";
-const DEMO_URL = "https://calendar.app.google/wxyiuihwd8yrZGHHA";
+import { DemoButton } from "./DemoButton";
 
 /* ------------------------------------------------------------------ */
 /*  ICON COMPONENTS                                                    */
@@ -142,7 +142,7 @@ export default function LandingPage() {
             <a href="#solutions" className="text-sm text-white/60 hover:text-white transition-colors duration-200">Problèmes résolus</a>
             <a href="#avantages" className="text-sm text-white/60 hover:text-white transition-colors duration-200">Avantages</a>
           </div>
-          <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 bg-white text-[#0A0A0A] px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-gray-100 transition-all duration-300">
+          <a href="#demo" className="group inline-flex items-center gap-2 bg-white text-[#0A0A0A] px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-gray-100 transition-all duration-300">
             Demander une démo
             <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
           </a>
@@ -169,7 +169,7 @@ export default function LandingPage() {
               Marcelle est l&apos;agent IA qui répond à vos guests et accompagne vos équipes, directement sur WhatsApp. Une seule intelligence au service de deux excellences&nbsp;: l&apos;expérience client et la performance opérationnelle.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 bg-white text-[#0A0A0A] px-7 py-3.5 rounded-xl font-medium text-[15px] hover:bg-gray-100 transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.12)]">
+              <a href="#demo" className="group inline-flex items-center gap-2 bg-white text-[#0A0A0A] px-7 py-3.5 rounded-xl font-medium text-[15px] hover:bg-gray-100 transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.12)]">
                 Demander une démo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a href="#comment" className="inline-flex items-center gap-2 border border-white/15 text-white px-7 py-3.5 rounded-xl font-medium text-[15px] hover:border-white/30 transition-all duration-300">
@@ -408,9 +408,7 @@ export default function LandingPage() {
               </h2>
               <p className="mt-4 text-base md:text-lg text-[#666] max-w-xl mx-auto leading-relaxed">Découvrez comment Marcelle peut transformer l&apos;expérience de vos guests et le quotidien de vos équipes. Démonstration personnalisée en 30&nbsp;minutes.</p>
               <div className="mt-10">
-                <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 bg-[#0A0A0A] text-white px-8 py-4 rounded-xl font-medium text-[15px] hover:bg-[#1A1A1A] transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.15)]">
-                  Demander une démo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </a>
+                <DemoButton />
               </div>
               <p className="mt-6 text-xs text-[#999]">Sans engagement — Mise en place en quelques jours</p>
             </div>
