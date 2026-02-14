@@ -192,20 +192,41 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ========== VIDEO DEMO ========== */}
+      <section className="py-12 md:py-20 lg:py-28">
+        <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16">
+          <div className="text-center mb-10">
+            <Badge variant="accent"><SparklesIcon className="w-3.5 h-3.5" /> Découvrir Marcelle</Badge>
+            <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">
+              Marcelle en action
+            </h2>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">65 secondes pour comprendre comment Marcelle transforme votre hôtel.</p>
+          </div>
+          <div className="relative rounded-3xl overflow-hidden border border-white/[0.08] shadow-[0_20px_80px_rgba(0,0,0,0.5)]">
+            <iframe
+              src="https://stream.mux.com/TGgf3vbYq3MrFukxQ8aV00uMYtApobtcKcQPhTo1icB00"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              style={{ width: "100%", aspectRatio: "16/9", border: "none", display: "block" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ========== HOW IT WORKS ========== */}
       <section id="comment" className="py-12 md:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="accent"><SparklesIcon className="w-3.5 h-3.5" /> Simple &amp; efficace</Badge>
             <h2 className="mt-6 font-[var(--font-playfair)] font-semibold text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight">
-              Vous envoyez le premier message,<br className="hidden md:block" /> Marcelle fait le reste
+              100% automatisé,<br className="hidden md:block" /> du premier message au dernier
             </h2>
-            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Un seul message de bienvenue suffit. L&apos;agent prend le relais et accompagne chaque guest tout au long de son séjour.</p>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Marcelle envoie automatiquement un message de bienvenue à chaque guest et gère l&apos;intégralité de la conversation. Vous n&apos;avez rien à faire.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {[
-              { icon: <SendIcon className="w-5 h-5" />, bg: "bg-[#0A0A0A]", step: "Étape 1", title: "Vous envoyez un message", desc: "Un message de bienvenue personnalisé est envoyé à vos clients avant ou pendant leur séjour, directement sur WhatsApp." },
-              { icon: <BotIcon className="w-5 h-5" />, bg: "bg-[#25D366]", step: "Étape 2", title: "Marcelle prend le relais", desc: "Dès que le client répond, Marcelle engage la conversation naturellement. Recommandations, horaires, services — tout y est." },
+              { icon: <SendIcon className="w-5 h-5" />, bg: "bg-[#0A0A0A]", step: "Étape 1", title: "Marcelle envoie le premier message", desc: "Un message de bienvenue personnalisé est envoyé automatiquement à chaque client avant ou pendant son séjour, directement sur WhatsApp." },
+              { icon: <BotIcon className="w-5 h-5" />, bg: "bg-[#25D366]", step: "Étape 2", title: "La conversation se poursuit", desc: "Dès que le client répond, Marcelle engage la conversation naturellement. Recommandations, horaires, services — tout y est." },
               { icon: <SmileIcon className="w-5 h-5" />, bg: "bg-[#C8A97E]", step: "Étape 3", title: "Vos guests sont enchantés", desc: "Chaque client bénéficie d'un concierge disponible 24h/24, dans sa langue, avec les connaissances spécifiques de votre hôtel." },
             ].map((s, i) => (
               <BentoCard key={i} variant="white" className="p-8 md:p-10">
