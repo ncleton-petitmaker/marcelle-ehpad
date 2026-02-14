@@ -10,6 +10,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://marcelle.ai"),
   title:
     "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
   description:
