@@ -570,7 +570,10 @@ export default function LandingPage() {
           </div>
           <div className="mt-10 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/20">&copy; {new Date().getFullYear()} Marcelle. Tous droits réservés.</p>
-            <Link href="/confidentialite" className="text-xs text-white/20 hover:text-white/50 transition-colors">Politique de confidentialité</Link>
+            <div className="flex gap-4">
+              <Link href="/confidentialite" className="text-xs text-white/20 hover:text-white/50 transition-colors">Confidentialité</Link>
+              <Link href="/cgv" className="text-xs text-white/20 hover:text-white/50 transition-colors">CGU</Link>
+            </div>
           </div>
         </div>
       </footer>
