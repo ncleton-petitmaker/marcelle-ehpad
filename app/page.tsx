@@ -313,11 +313,11 @@ export default function LandingPage() {
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
               <div className="text-4xl md:text-5xl font-serif text-terracotta">45 min</div>
-              <p className="mt-2 text-sm text-graphite">retrouvées par soignant, par jour <a href="https://sosehpad.com/comment-le-huddle-de-10-minutes-revolutionne-les-transmissions-soignantes-en-ehpad/40445/" target="_blank" rel="noopener noreferrer" className="text-sauge hover:underline text-xs">(source)</a></p>
+              <p className="mt-2 text-sm text-graphite">retrouvées par soignant, par jour</p>
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
-              <div className="text-4xl md:text-5xl font-serif text-sauge">45 min</div>
-              <p className="mt-2 text-sm text-graphite">pour former une équipe complète</p>
+              <div className="text-4xl md:text-5xl font-serif text-sauge">Zéro</div>
+              <p className="mt-2 text-sm text-graphite">compétence technique requise</p>
             </BentoCard>
           </div>
         </div>
