@@ -173,7 +173,7 @@ export default function LandingPage() {
     applicationCategory: "HealthApplication",
     operatingSystem: "Web",
     description:
-      "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles. Conforme RGPD et IA Act.",
+      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Configuration sur mesure, compatible avec tous les logiciels de soins. Conforme RGPD et IA Act.",
     url: "https://srv756238.hstgr.cloud",
     offers: {
       "@type": "Offer",
@@ -181,9 +181,11 @@ export default function LandingPage() {
       availability: "https://schema.org/InStock",
     },
     featureList: [
-      "Transmissions vocales pour soignants",
-      "Formation video avec recherche IA",
-      "Lien familles automatise",
+      "Agent IA EHPAD pour transmissions vocales",
+      "Formation vidéo avec recherche IA",
+      "Lien familles automatisé",
+      "Compatible avec tous les logiciels de soins",
+      "Configuration sur mesure pour chaque établissement",
       "Conforme RGPD et IA Act",
     ],
   };
@@ -194,50 +196,50 @@ export default function LandingPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Marcelle s'integre-t-elle avec notre logiciel de soins existant ?",
+        name: "Marcelle s'intègre-t-elle avec notre logiciel de soins existant ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Oui. Marcelle se connecte aux principaux logiciels de soins du marche (NetSoins, Titan, Livia, etc.) via API. Les transmissions vocales remontent automatiquement dans votre outil existant, sans double saisie.",
+          text: "Oui, Marcelle est conçue pour s'adapter à tous les logiciels de soins du marché : NetSoins, Titan, Livia, Easily, Ogirys, Teranga, et bien d'autres. La configuration est réalisée sur mesure pour votre établissement, vos process et vos outils existants. Les transmissions vocales remontent automatiquement dans votre logiciel, sans double saisie.",
         },
       },
       {
         "@type": "Question",
-        name: "Concretement, comment une aide-soignante utilise Marcelle ?",
+        name: "Concrètement, comment une aide-soignante utilise Marcelle ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "En fin de tournee, l'aide-soignante parle a Marcelle comme a une collegue : 'Mme Dupont a bien mange ce midi, elle a marche 10 minutes dans le couloir, elle etait de bonne humeur.' Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du resident.",
+          text: "En fin de tournée, l'aide-soignante parle à Marcelle comme à une collègue : « Mme Dupont a bien mangé ce midi, elle a marché 10 minutes dans le couloir, elle était de bonne humeur. » Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du résident.",
         },
       },
       {
         "@type": "Question",
-        name: "Les donnees de sante sont-elles securisees ?",
+        name: "Les données de santé sont-elles sécurisées ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Absolument. Marcelle est hebergee sur des serveurs certifies HDS (Hebergeur de Donnees de Sante) en Europe. Toutes les donnees sont chiffrees, le consentement est explicite, et nous sommes conformes RGPD et IA Act.",
+          text: "Absolument. Marcelle est hébergée sur des serveurs certifiés HDS (Hébergeur de Données de Santé) en Europe. Toutes les données sont chiffrées, le consentement est explicite, et nous sommes conformes RGPD et IA Act.",
         },
       },
       {
         "@type": "Question",
-        name: "Combien de temps pour deployer Marcelle dans un EHPAD ?",
+        name: "Combien de temps pour déployer Marcelle dans un EHPAD ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Le deploiement complet prend 2 a 4 semaines : une semaine de configuration, une semaine de formation des equipes, puis un accompagnement au demarrage. Les equipes sont autonomes des la fin du premier mois.",
+          text: "Le déploiement complet prend 2 à 4 semaines : une semaine de configuration sur mesure (adaptation à vos process, connexion à votre logiciel de soins), une semaine de formation des équipes, puis un accompagnement au démarrage. La formation des soignants dure 45 minutes. Les équipes sont autonomes dès la fin du premier mois.",
         },
       },
       {
         "@type": "Question",
-        name: "Et si les soignants ne sont pas a l'aise avec la technologie ?",
+        name: "Et si les soignants ne sont pas à l'aise avec la technologie ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "C'est justement la force de Marcelle : il suffit de parler. Pas d'ecran complexe, pas de formulaire a remplir, pas d'application a telecharger. Si vous savez parler, vous savez utiliser Marcelle.",
+          text: "C'est justement la force de Marcelle : il suffit de parler. Pas d'écran complexe, pas de formulaire à remplir, pas d'application à télécharger. Si vous savez parler, vous savez utiliser Marcelle. La formation dure 45 minutes et les soignants sont autonomes immédiatement.",
         },
       },
       {
         "@type": "Question",
-        name: "Combien coute Marcelle ?",
+        name: "Combien coûte Marcelle ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Le tarif depend de la taille de l'etablissement et des modules actives. Demandez une demo pour obtenir un devis personnalise. Le retour sur investissement est generalement visible des le premier mois grace au temps gagne sur les transmissions.",
+          text: "Le tarif dépend de la taille de l'établissement et des modules activés. Demandez une démo pour obtenir un devis personnalisé. Le retour sur investissement est généralement visible dès le premier mois grâce au temps gagné sur les transmissions.",
         },
       },
     ],
@@ -265,49 +267,49 @@ export default function LandingPage() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#piliers" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Les 3 piliers</a>
-            <a href="#comment" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Comment ca marche</a>
-            <a href="#conformite" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Conformite</a>
+            <a href="#comment" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Comment ça marche</a>
+            <a href="#conformite" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Conformité</a>
             <a href="#faq" className="text-sm text-graphite hover:text-encre transition-colors duration-200">FAQ</a>
           </div>
           <DemoTrigger className="group inline-flex items-center gap-2 bg-sauge text-white px-5 py-2.5 rounded-xl text-sm font-medium hover:bg-sauge-deep transition-all duration-300 cursor-pointer">
-            Demander une demo
+            Demander une démo
             <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
           </DemoTrigger>
         </div>
       </nav>
 
       {/* ========== 2. HERO (bg-cream) ========== */}
-      <section aria-label="Marcelle - IA pour EHPAD" className="relative pt-[72px] min-h-screen flex flex-col">
+      <section aria-label="Marcelle - Agent IA EHPAD" className="relative pt-[72px] min-h-screen flex flex-col">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-sauge/[0.04] rounded-full blur-[120px]" />
         </div>
         <div className="max-w-7xl mx-auto w-full px-4 md:px-8 lg:px-16 pt-16 md:pt-24 lg:pt-32 pb-12 flex-1 flex flex-col relative z-10">
           <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="flex flex-wrap justify-center gap-3 mb-6">
-              <Badge variant="sauge"><SparklesIcon className="w-3.5 h-3.5" /> IA pour EHPAD</Badge>
+              <Badge variant="sauge"><SparklesIcon className="w-3.5 h-3.5" /> Agent IA EHPAD</Badge>
               <Badge variant="terracotta"><ShieldIcon className="w-3.5 h-3.5" /> Conforme RGPD &amp; IA Act</Badge>
             </div>
             <h1 className="font-serif font-normal leading-[1.05] tracking-tight text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] text-encre">
-              L&apos;assistante IA qui prend soin
+              L&apos;agent IA EHPAD qui prend soin
               <br />
-              <span className="text-sauge">de vos equipes</span>
+              <span className="text-sauge">de vos équipes</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-graphite max-w-2xl mx-auto leading-relaxed">
-              Marcelle aide les soignants a transmettre, se former et communiquer avec les familles.
+              Marcelle aide les soignants à transmettre, se former et communiquer avec les familles. Configurée sur mesure pour votre établissement et vos logiciels.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <DemoTrigger className="group inline-flex items-center gap-2 bg-sauge text-white px-7 py-3.5 rounded-xl font-medium text-[15px] hover:bg-sauge-deep transition-all duration-300 shadow-[0_2px_8px_rgba(91,140,111,0.25)] cursor-pointer">
-                Demander une demo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                Demander une démo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </DemoTrigger>
               <a href="#piliers" className="inline-flex items-center gap-2 border border-lin text-encre px-7 py-3.5 rounded-xl font-medium text-[15px] hover:border-sauge/30 hover:text-sauge transition-all duration-300">
-                Decouvrir les 3 piliers
+                Découvrir les 3 piliers
               </a>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto w-full">
             <BentoCard variant="white" className="p-6 md:p-8">
               <div className="text-4xl md:text-5xl font-serif text-sauge">3x</div>
-              <p className="mt-2 text-sm text-graphite">plus de details dans les transmissions</p>
+              <p className="mt-2 text-sm text-graphite">plus de détails dans les transmissions</p>
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
               <div className="text-4xl md:text-5xl font-serif text-terracotta">-40%</div>
@@ -315,21 +317,21 @@ export default function LandingPage() {
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
               <div className="text-4xl md:text-5xl font-serif text-sauge">100%</div>
-              <p className="mt-2 text-sm text-graphite">des familles informees en continu</p>
+              <p className="mt-2 text-sm text-graphite">des familles informées en continu</p>
             </BentoCard>
           </div>
         </div>
       </section>
 
       {/* ========== 3. VIDEO DEMO ========== */}
-      <section aria-label="Demonstration video de Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
+      <section aria-label="Démonstration vidéo de l'agent IA EHPAD Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-10">
-            <Badge variant="sauge"><PlayIcon className="w-3.5 h-3.5" /> Decouvrir Marcelle</Badge>
+            <Badge variant="sauge"><PlayIcon className="w-3.5 h-3.5" /> Découvrir Marcelle</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-encre">
               Marcelle en 90 secondes
             </h2>
-            <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">Decouvrez comment Marcelle transforme le quotidien en EHPAD.</p>
+            <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">Découvrez comment cet agent IA EHPAD transforme le quotidien des soignants.</p>
           </div>
           <div className="relative rounded-3xl overflow-hidden border border-lin shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
             <VideoPlayer playbackId="TGgf3vbYq3MrFukxQ8aV00uMYtApobtcKcQPhTo1icB00" />
@@ -338,14 +340,14 @@ export default function LandingPage() {
       </section>
 
       {/* ========== 4. LES 3 PILIERS (bg-ardoise) ========== */}
-      <section id="piliers" aria-label="Les 3 missions de Marcelle" className="py-12 md:py-20 lg:py-28 bg-ardoise">
+      <section id="piliers" aria-label="Les 3 missions de l'agent IA EHPAD Marcelle" className="py-12 md:py-20 lg:py-28 bg-ardoise">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="light"><SparklesIcon className="w-3.5 h-3.5" /> Les 3 piliers</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-white">
-              Une seule IA, trois missions essentielles
+              Un seul agent IA, trois missions essentielles
             </h2>
-            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Marcelle accompagne vos equipes du matin au soir, et rassure les familles meme la nuit.</p>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Marcelle accompagne vos équipes du matin au soir, et rassure les familles même la nuit.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6">
             {/* Transmissions */}
@@ -353,13 +355,13 @@ export default function LandingPage() {
               <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-sauge/20 text-sauge shrink-0 mb-5">
                 <MicIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">Des transmissions completes, sans paperasse</h3>
-              <p className="text-white/50 leading-relaxed mb-6">Les soignants parlent a Marcelle au lieu de remplir des formulaires. L&apos;IA structure, classe et enrichit chaque transmission.</p>
+              <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">Des transmissions complètes, sans paperasse</h3>
+              <p className="text-white/50 leading-relaxed mb-6">Les soignants parlent à Marcelle au lieu de remplir des formulaires. L&apos;IA structure, classe et enrichit chaque transmission.</p>
               <div className="space-y-3">
                 {[
-                  "Parler au lieu d'ecrire",
-                  "Recap automatique en debut de poste",
-                  "Transmission inter-equipes sans perte",
+                  "Parler au lieu d'écrire",
+                  "Récap automatique en début de poste",
+                  "Transmission inter-équipes sans perte",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckIcon className="w-4 h-4 text-sauge shrink-0 mt-0.5" />
@@ -374,13 +376,13 @@ export default function LandingPage() {
               <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-terracotta/20 text-terracotta shrink-0 mb-5">
                 <AcademicCapIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">La formation par la video, accessible a tous</h3>
-              <p className="text-white/50 leading-relaxed mb-6">Videotheque interne de procedures. Marcelle retrouve le passage exact qui repond a la question d&apos;un soignant.</p>
+              <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">La formation par la vidéo, accessible à tous</h3>
+              <p className="text-white/50 leading-relaxed mb-6">Vidéothèque interne de procédures. Marcelle retrouve le passage exact qui répond à la question d&apos;un soignant.</p>
               <div className="space-y-3">
                 {[
-                  "Videotheque interne de procedures",
-                  "Retrouver le moment exact en video",
-                  "Onboarding accelere des nouveaux",
+                  "Vidéothèque interne de procédures",
+                  "Retrouver le moment exact en vidéo",
+                  "Onboarding accéléré des nouveaux",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckIcon className="w-4 h-4 text-terracotta shrink-0 mt-0.5" />
@@ -396,12 +398,12 @@ export default function LandingPage() {
                 <HeartIcon className="w-6 h-6" />
               </div>
               <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">Le lien avec les familles, enfin simple</h3>
-              <p className="text-white/50 leading-relaxed mb-6">Les proches interrogent Marcelle pour savoir comment se passe la journee de leur parent. Plus d&apos;inquietude silencieuse.</p>
+              <p className="text-white/50 leading-relaxed mb-6">Les proches interrogent Marcelle pour savoir comment se passe la journée de leur parent. Plus d&apos;inquiétude silencieuse.</p>
               <div className="space-y-3">
                 {[
                   "Interlocuteur disponible 24h/24",
                   "Partager les beaux moments",
-                  "Demandes et incidents traces",
+                  "Demandes et incidents tracés",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckIcon className="w-4 h-4 text-sauge shrink-0 mt-0.5" />
@@ -414,28 +416,28 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ========== 5. COMMENT CA MARCHE (bg-cream) ========== */}
-      <section id="comment" aria-label="Comment fonctionne Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
+      {/* ========== 5. COMMENT ÇA MARCHE (bg-cream) ========== */}
+      <section id="comment" aria-label="Comment fonctionne l'agent IA EHPAD Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
-            <Badge variant="sauge"><CogIcon className="w-3.5 h-3.5" /> Demarrage simple</Badge>
+            <Badge variant="sauge"><CogIcon className="w-3.5 h-3.5" /> Démarrage simple</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-encre">
-              Operationnel en 4 etapes
+              Opérationnel en 4 étapes
             </h2>
-            <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">De la premiere rencontre a l&apos;autonomie complete de vos equipes.</p>
+            <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">De la première rencontre à l&apos;autonomie complète de vos équipes.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
-              { step: "1", icon: <BuildingIcon className="w-5 h-5" />, title: "On comprend votre etablissement", desc: "Visite, echange avec les equipes, analyse des besoins specifiques de votre EHPAD." },
-              { step: "2", icon: <CogIcon className="w-5 h-5" />, title: "On configure Marcelle", desc: "Integration avec votre logiciel de soins, import des procedures, parametrage des acces familles." },
-              { step: "3", icon: <MicIcon className="w-5 h-5" />, title: "Vos equipes parlent a Marcelle", desc: "Formation des soignants en une demi-journee. Ils parlent, Marcelle fait le reste." },
-              { step: "4", icon: <HeartIcon className="w-5 h-5" />, title: "Les familles sont informees", desc: "Les proches accedent a Marcelle et posent leurs questions en toute serenite." },
+              { step: "1", icon: <BuildingIcon className="w-5 h-5" />, title: "On comprend votre établissement", desc: "Visite, échange avec les équipes, analyse de vos process spécifiques et de vos logiciels en place." },
+              { step: "2", icon: <CogIcon className="w-5 h-5" />, title: "Configuration sur mesure", desc: "Marcelle s'adapte à vos process, se connecte à votre logiciel de soins (NetSoins, Titan, Livia, Easily, Ogirys…) et intègre vos procédures." },
+              { step: "3", icon: <MicIcon className="w-5 h-5" />, title: "Vos équipes parlent à Marcelle", desc: "Formation des soignants en 45 minutes. Ils parlent, Marcelle fait le reste. Aucune compétence technique requise." },
+              { step: "4", icon: <HeartIcon className="w-5 h-5" />, title: "Les familles sont informées", desc: "Les proches accèdent à Marcelle et posent leurs questions en toute sérénité, sans déranger les équipes." },
             ].map((s, i) => (
               <BentoCard key={i} variant="white" className="p-8">
                 <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-sauge/10 text-sauge shrink-0 mb-5">
                   {s.icon}
                 </div>
-                <p className="text-xs font-medium text-sauge uppercase tracking-wider mb-2">Etape {s.step}</p>
+                <p className="text-xs font-medium text-sauge uppercase tracking-wider mb-2">Étape {s.step}</p>
                 <h3 className="font-serif text-lg font-normal mb-3 text-encre">{s.title}</h3>
                 <p className="text-graphite leading-relaxed text-sm">{s.desc}</p>
               </BentoCard>
@@ -444,25 +446,25 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ========== 6. PROBLEMES RESOLUS (bg-ardoise, bento grid) ========== */}
-      <section aria-label="Problemes resolus par Marcelle" className="py-12 md:py-20 lg:py-28 bg-ardoise">
+      {/* ========== 6. PROBLÈMES RÉSOLUS (bg-ardoise, bento grid) ========== */}
+      <section aria-label="Problèmes résolus par l'agent IA EHPAD" className="py-12 md:py-20 lg:py-28 bg-ardoise">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="light"><SparklesIcon className="w-3.5 h-3.5" /> Le constat</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-white">
               Ces situations, vous les connaissez
             </h2>
-            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Et pour chacune, Marcelle apporte une reponse concrete.</p>
+            <p className="mt-4 text-base md:text-lg text-white/50 max-w-xl mx-auto">Et pour chacune, Marcelle apporte une réponse concrète.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {/* Les transmissions baclees - col-span-2 */}
+            {/* Les transmissions bâclées - col-span-2 */}
             <BentoCard variant="glass" className="p-8 md:p-10 lg:col-span-2">
               <Badge variant="light">Transmissions</Badge>
-              <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Les transmissions baclees</h3>
-              <p className="mt-3 text-white/50 leading-relaxed">En fin de shift, la fatigue s&apos;accumule. Les transmissions sont rapides, incompletes, parfois oubliees. L&apos;equipe de nuit prend le relais sans toutes les informations.</p>
+              <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Les transmissions bâclées</h3>
+              <p className="mt-3 text-white/50 leading-relaxed">En fin de shift, la fatigue s&apos;accumule. Les transmissions sont rapides, incomplètes, parfois oubliées. L&apos;équipe de nuit prend le relais sans toutes les informations.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-sauge mb-1">Avec Marcelle</p>
-                <p className="text-sm text-white/70">Les soignants parlent en 2 minutes au lieu d&apos;ecrire en 15. Marcelle structure tout automatiquement, rien n&apos;est oublie.</p>
+                <p className="text-sm text-white/70">Les soignants parlent en 2 minutes au lieu d&apos;écrire en 15. Marcelle structure tout automatiquement, rien n&apos;est oublié.</p>
               </div>
             </BentoCard>
 
@@ -470,10 +472,10 @@ export default function LandingPage() {
             <BentoCard variant="glass" className="p-8 md:p-10 lg:row-span-2">
               <Badge variant="light">Savoir</Badge>
               <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Le savoir qui part avec les gens</h3>
-              <p className="mt-3 text-white/50 leading-relaxed">Quand Marie part a la retraite, 30 ans d&apos;experience disparaissent avec elle. Les habitudes des residents, les petites astuces, les preferences de chacun -- tout est perdu.</p>
+              <p className="mt-3 text-white/50 leading-relaxed">Quand Marie part à la retraite, 30 ans d&apos;expérience disparaissent avec elle. Les habitudes des résidents, les petites astuces, les préférences de chacun — tout est perdu.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-sauge mb-1">Avec Marcelle</p>
-                <p className="text-sm text-white/70">Chaque procedure est filmee et indexee. Le savoir reste dans l&apos;etablissement, accessible a tous, pour toujours.</p>
+                <p className="text-sm text-white/70">Chaque procédure est filmée et indexée. Le savoir reste dans l&apos;établissement, accessible à tous, pour toujours.</p>
               </div>
               <div className="mt-8 flex gap-2">
                 <div className="w-2 h-2 rounded-full bg-sauge" />
@@ -486,44 +488,44 @@ export default function LandingPage() {
             <BentoCard variant="glass" className="p-8 md:p-10">
               <Badge variant="light">Familles</Badge>
               <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Les familles dans le noir</h3>
-              <p className="mt-3 text-white/50 leading-relaxed">Les proches appellent, inquiets. L&apos;equipe est en soin et ne peut pas repondre. L&apos;anxiete monte des deux cotes.</p>
+              <p className="mt-3 text-white/50 leading-relaxed">Les proches appellent, inquiets. L&apos;équipe est en soin et ne peut pas répondre. L&apos;anxiété monte des deux côtés.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-terracotta mb-1">Avec Marcelle</p>
-                <p className="text-sm text-white/70">Les familles interrogent Marcelle a tout moment. Elles savent comment va leur proche, sans deranger les equipes.</p>
+                <p className="text-sm text-white/70">Les familles interrogent Marcelle à tout moment. Elles savent comment va leur proche, sans déranger les équipes.</p>
               </div>
             </BentoCard>
 
-            {/* L'eternel recommencement */}
+            {/* L'éternel recommencement */}
             <BentoCard variant="glass" className="p-8 md:p-10">
               <Badge variant="light">Onboarding</Badge>
-              <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">L&apos;eternel recommencement</h3>
-              <p className="mt-3 text-white/50 leading-relaxed">Chaque nouveau soignant mobilise un collegue senior pendant des semaines. Les memes questions reviennent, encore et encore. Le turnover est epuisant.</p>
+              <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">L&apos;éternel recommencement</h3>
+              <p className="mt-3 text-white/50 leading-relaxed">Chaque nouveau soignant mobilise un collègue senior pendant des semaines. Les mêmes questions reviennent, encore et encore. Le turnover est épuisant.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-terracotta mb-1">Avec Marcelle</p>
-                <p className="text-sm text-white/70">Les nouveaux regardent les videos de procedures et posent leurs questions a Marcelle. Autonomes en quelques jours au lieu de plusieurs semaines.</p>
+                <p className="text-sm text-white/70">Les nouveaux regardent les vidéos de procédures et posent leurs questions à Marcelle. Autonomes en quelques jours au lieu de plusieurs semaines.</p>
               </div>
             </BentoCard>
           </div>
         </div>
       </section>
 
-      {/* ========== 7. BENEFICES (bg-cream, grille 3x2) ========== */}
-      <section aria-label="Les benefices de Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
+      {/* ========== 7. BÉNÉFICES (bg-cream, grille 3x2) ========== */}
+      <section aria-label="Les bénéfices de l'agent IA EHPAD Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
-            <Badge variant="sauge"><ChartIcon className="w-3.5 h-3.5" /> Resultats</Badge>
+            <Badge variant="sauge"><ChartIcon className="w-3.5 h-3.5" /> Résultats</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-encre">
-              Des resultats concrets, des le premier mois
+              Des résultats concrets, dès le premier mois
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {([
-              { icon: <ClockIcon className="w-5 h-5" />, title: "2 min au lieu de 15", desc: "Les transmissions orales remplacent 15 minutes de saisie. Le temps retrouve va aux residents.", variant: "sauge" as const },
-              { icon: <DocumentIcon className="w-5 h-5" />, title: "3x plus de details", desc: "En parlant naturellement, les soignants livrent bien plus d'informations qu'en cochant des cases.", variant: "white" as const },
-              { icon: <RefreshIcon className="w-5 h-5" />, title: "Zero perte entre equipes", desc: "Le recap de debut de poste est automatique. L'equipe de nuit sait tout ce qui s'est passe le jour.", variant: "white" as const },
-              { icon: <AcademicCapIcon className="w-5 h-5" />, title: "Formation permanente", desc: "Chaque procedure est accessible en video. Les nouveaux apprennent a leur rythme, sans mobiliser les anciens.", variant: "white" as const },
-              { icon: <HeartIcon className="w-5 h-5" />, title: "Familles rassurees", desc: "Les proches savent comment va leur parent a tout moment. Moins d'appels anxieux, plus de confiance.", variant: "terracotta" as const },
-              { icon: <StarIcon className="w-5 h-5" />, title: "Attractivite employeur", desc: "Un EHPAD qui investit dans ses outils attire plus de candidats. Marcelle est un argument de recrutement.", variant: "white" as const },
+              { icon: <ClockIcon className="w-5 h-5" />, title: "2 min au lieu de 15", desc: "Les transmissions orales remplacent 15 minutes de saisie. Le temps retrouvé va aux résidents.", variant: "sauge" as const },
+              { icon: <DocumentIcon className="w-5 h-5" />, title: "3x plus de détails", desc: "En parlant naturellement, les soignants livrent bien plus d'informations qu'en cochant des cases.", variant: "white" as const },
+              { icon: <RefreshIcon className="w-5 h-5" />, title: "Zéro perte entre équipes", desc: "Le récap de début de poste est automatique. L'équipe de nuit sait tout ce qui s'est passé le jour.", variant: "white" as const },
+              { icon: <AcademicCapIcon className="w-5 h-5" />, title: "Formation permanente", desc: "Chaque procédure est accessible en vidéo. Les nouveaux apprennent à leur rythme, sans mobiliser les anciens.", variant: "white" as const },
+              { icon: <HeartIcon className="w-5 h-5" />, title: "Familles rassurées", desc: "Les proches savent comment va leur parent à tout moment. Moins d'appels anxieux, plus de confiance.", variant: "terracotta" as const },
+              { icon: <StarIcon className="w-5 h-5" />, title: "Attractivité employeur", desc: "Un EHPAD qui investit dans ses outils attire plus de candidats. Marcelle est un argument de recrutement.", variant: "white" as const },
             ]).map((b, i) => (
               <BentoCard key={i} variant={b.variant} className="p-6 md:p-8">
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-5 ${
@@ -543,18 +545,18 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ========== 8. CONFORMITE RGPD & IA ACT ========== */}
-      <section id="conformite" aria-label="Conformite RGPD et IA Act" className="py-12 md:py-20 px-4 md:px-8 lg:px-16 bg-cream">
+      {/* ========== 8. CONFORMITÉ RGPD & IA ACT ========== */}
+      <section id="conformite" aria-label="Conformité RGPD et IA Act" className="py-12 md:py-20 px-4 md:px-8 lg:px-16 bg-cream">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-ardoise p-8 md:p-12">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12">
               <div className="flex-1">
-                <Badge variant="light"><ShieldIcon className="w-3.5 h-3.5" /> Conformite</Badge>
-                <h3 className="mt-4 font-serif text-xl md:text-2xl leading-snug text-white">Conforme RGPD &amp; IA Act europeen</h3>
-                <p className="mt-3 text-white/50 leading-relaxed max-w-lg">Marcelle est concu dans le respect total de la reglementation europeenne. Donnees de sante protegees, consentement natif, traitement IA transparent et documente.</p>
+                <Badge variant="light"><ShieldIcon className="w-3.5 h-3.5" /> Conformité</Badge>
+                <h3 className="mt-4 font-serif text-xl md:text-2xl leading-snug text-white">Conforme RGPD &amp; IA Act européen</h3>
+                <p className="mt-3 text-white/50 leading-relaxed max-w-lg">Marcelle est conçu dans le respect total de la réglementation européenne. Données de santé protégées, consentement natif, traitement IA transparent et documenté.</p>
               </div>
               <div className="flex flex-wrap gap-3">
-                {["HDS", "Consentement explicite", "Donnees en Europe", "Droit a l'oubli", "IA transparente", "Conforme IA Act"].map((item, i) => (
+                {["HDS", "Consentement explicite", "Données en Europe", "Droit à l'oubli", "IA transparente", "Conforme IA Act"].map((item, i) => (
                   <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-white/[0.06] text-white/70">
                     <CheckIcon className="w-3.5 h-3.5 text-sauge" />{item}
                   </span>
@@ -565,11 +567,11 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ========== 9. TEMOIGNAGES (placeholders) ========== */}
-      <section aria-label="Temoignages" className="py-12 md:py-20 lg:py-28 bg-cream">
+      {/* ========== 9. TÉMOIGNAGES (placeholders) ========== */}
+      <section aria-label="Témoignages" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
-            <Badge variant="terracotta"><ChatBubbleIcon className="w-3.5 h-3.5" /> Temoignages</Badge>
+            <Badge variant="terracotta"><ChatBubbleIcon className="w-3.5 h-3.5" /> Témoignages</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-encre">
               Ce qu&apos;en disent les professionnels
             </h2>
@@ -578,21 +580,21 @@ export default function LandingPage() {
             {/* PLACEHOLDER TESTIMONIALS - Replace with real ones */}
             {([
               {
-                quote: "Depuis Marcelle, mes aides-soignantes passent 2 minutes sur les transmissions au lieu de 15. Et les informations sont bien plus completes qu'avant.",
+                quote: "Depuis Marcelle, mes aides-soignantes passent 2 minutes sur les transmissions au lieu de 15. Et les informations sont bien plus complètes qu'avant. La configuration s'est adaptée parfaitement à notre logiciel NetSoins.",
                 name: "Sophie M.",
                 role: "Directrice d'EHPAD",
-                location: "Ile-de-France",
+                location: "Île-de-France",
               },
               {
-                quote: "Je retrouve en 10 secondes le passage exact d'une video de procedure. Pour la coordination medicale, c'est un gain de temps enorme.",
+                quote: "Je retrouve en 10 secondes le passage exact d'une vidéo de procédure. Pour la coordination médicale, c'est un gain de temps énorme. Et la formation des équipes a duré 45 minutes, montre en main.",
                 name: "Dr. Laurent P.",
-                role: "Medecin coordonnateur",
+                role: "Médecin coordonnateur",
                 location: "Provence",
               },
               {
-                quote: "Les familles sont tellement plus sereines depuis qu'elles peuvent interroger Marcelle. Les appels anxieux ont diminue de moitie.",
+                quote: "Les familles sont tellement plus sereines depuis qu'elles peuvent interroger Marcelle. Les appels anxieux ont diminué de moitié. C'est un soulagement pour tout le monde.",
                 name: "Claire D.",
-                role: "Cadre de sante",
+                role: "Cadre de santé",
                 location: "Normandie",
               },
             ]).map((t, i) => (
@@ -614,48 +616,48 @@ export default function LandingPage() {
       </section>
 
       {/* ========== 10. FAQ (6 questions EHPAD) ========== */}
-      <section id="faq" aria-label="Questions frequentes" className="py-12 md:py-20 lg:py-28 bg-cream">
+      <section id="faq" aria-label="Questions fréquentes sur l'agent IA EHPAD" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-12 md:mb-16">
             <Badge variant="sauge"><SparklesIcon className="w-3.5 h-3.5" /> FAQ</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-encre">
-              Questions frequentes
+              Questions fréquentes
             </h2>
             <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">
-              Tout ce que vous devez savoir sur Marcelle en EHPAD.
+              Tout ce que vous devez savoir sur l&apos;agent IA EHPAD Marcelle.
             </p>
           </div>
           <div className="space-y-4">
             {([
               {
-                question: "Marcelle s'integre-t-elle avec notre logiciel de soins existant ?",
+                question: "Marcelle s'intègre-t-elle avec notre logiciel de soins existant ?",
                 answer:
-                  "Oui. Marcelle se connecte aux principaux logiciels de soins du marche (NetSoins, Titan, Livia, etc.) via API. Les transmissions vocales remontent automatiquement dans votre outil existant, sans double saisie.",
+                  "Oui, Marcelle est conçue pour s'adapter à tous les logiciels de soins du marché : NetSoins, Titan, Livia, Easily, Ogirys, Teranga, et bien d'autres. La configuration est réalisée sur mesure pour votre établissement : vos process, vos formulaires, vos habitudes. Les transmissions vocales remontent automatiquement dans votre outil existant, sans double saisie.",
               },
               {
-                question: "Concretement, comment une aide-soignante utilise Marcelle ?",
+                question: "Concrètement, comment une aide-soignante utilise Marcelle ?",
                 answer:
-                  "En fin de tournee, l'aide-soignante parle a Marcelle comme a une collegue : 'Mme Dupont a bien mange ce midi, elle a marche 10 minutes dans le couloir, elle etait de bonne humeur.' Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du resident.",
+                  "En fin de tournée, l'aide-soignante parle à Marcelle comme à une collègue : « Mme Dupont a bien mangé ce midi, elle a marché 10 minutes dans le couloir, elle était de bonne humeur. » Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du résident.",
               },
               {
-                question: "Les donnees de sante sont-elles securisees ?",
+                question: "Les données de santé sont-elles sécurisées ?",
                 answer:
-                  "Absolument. Marcelle est hebergee sur des serveurs certifies HDS (Hebergeur de Donnees de Sante) en Europe. Toutes les donnees sont chiffrees, le consentement est explicite, et nous sommes conformes RGPD et IA Act.",
+                  "Absolument. Marcelle est hébergée sur des serveurs certifiés HDS (Hébergeur de Données de Santé) en Europe. Toutes les données sont chiffrées, le consentement est explicite, et nous sommes conformes RGPD et IA Act.",
               },
               {
-                question: "Combien de temps pour deployer Marcelle dans un EHPAD ?",
+                question: "Combien de temps pour déployer Marcelle dans un EHPAD ?",
                 answer:
-                  "Le deploiement complet prend 2 a 4 semaines : une semaine de configuration, une semaine de formation des equipes, puis un accompagnement au demarrage. Les equipes sont autonomes des la fin du premier mois.",
+                  "Le déploiement complet prend 2 à 4 semaines : une semaine de configuration sur mesure (adaptation à vos process, connexion à votre logiciel de soins), une semaine de formation des équipes, puis un accompagnement au démarrage. La formation des soignants dure 45 minutes. Les équipes sont autonomes dès la fin du premier mois.",
               },
               {
-                question: "Et si les soignants ne sont pas a l'aise avec la technologie ?",
+                question: "Et si les soignants ne sont pas à l'aise avec la technologie ?",
                 answer:
-                  "C'est justement la force de Marcelle : il suffit de parler. Pas d'ecran complexe, pas de formulaire a remplir, pas d'application a telecharger. Si vous savez parler, vous savez utiliser Marcelle.",
+                  "C'est justement la force de Marcelle : il suffit de parler. Pas d'écran complexe, pas de formulaire à remplir, pas d'application à télécharger. Si vous savez parler, vous savez utiliser Marcelle. La formation dure 45 minutes et les soignants sont autonomes immédiatement.",
               },
               {
-                question: "Combien coute Marcelle ?",
+                question: "Combien coûte Marcelle ?",
                 answer:
-                  "Le tarif depend de la taille de l'etablissement et des modules actives. Demandez une demo pour obtenir un devis personnalise. Le retour sur investissement est generalement visible des le premier mois grace au temps gagne sur les transmissions.",
+                  "Le tarif dépend de la taille de l'établissement et des modules activés. Demandez une démo pour obtenir un devis personnalisé. Le retour sur investissement est généralement visible dès le premier mois grâce au temps gagné sur les transmissions.",
               },
             ]).map((item, i) => (
               <details
@@ -684,22 +686,22 @@ export default function LandingPage() {
       </section>
 
       {/* ========== 11. CTA FINAL ========== */}
-      <section id="demo" aria-label="Demander une demonstration" className="py-12 md:py-20 lg:py-28 bg-cream">
+      <section id="demo" aria-label="Demander une démonstration de l'agent IA EHPAD" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <BentoCard variant="white" className="relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-sauge/5 via-transparent to-terracotta/10 pointer-events-none" />
             <div className="relative z-10 py-16 md:py-20 lg:py-24 px-8 md:px-16 text-center">
-              <Badge variant="sauge">Passez a l&apos;action</Badge>
+              <Badge variant="sauge">Passez à l&apos;action</Badge>
               <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-encre">
-                Simplifiez le quotidien<br className="hidden md:block" /> de vos equipes
+                Simplifiez le quotidien<br className="hidden md:block" /> de vos équipes
               </h2>
-              <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto leading-relaxed">Decouvrez comment Marcelle peut transformer les transmissions, la formation et le lien familles dans votre etablissement. Demonstration personnalisee en 30&nbsp;minutes.</p>
+              <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto leading-relaxed">Découvrez comment Marcelle peut transformer les transmissions, la formation et le lien familles dans votre établissement. Configuration sur mesure, compatible avec tous vos logiciels. Démonstration personnalisée en 30&nbsp;minutes.</p>
               <div className="mt-10">
                 <DemoTrigger className="group inline-flex items-center gap-2 bg-sauge text-white px-8 py-4 rounded-xl font-medium text-[15px] hover:bg-sauge-deep transition-all duration-300 shadow-[0_2px_8px_rgba(91,140,111,0.25)] cursor-pointer">
-                  Demander une demo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  Demander une démo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </DemoTrigger>
               </div>
-              <p className="mt-6 text-xs text-graphite">Sans engagement — Deploiement en 2 a 4 semaines</p>
+              <p className="mt-6 text-xs text-graphite">Sans engagement — Déploiement en 2 à 4 semaines</p>
             </div>
           </BentoCard>
         </div>
@@ -716,20 +718,20 @@ export default function LandingPage() {
                 </div>
                 <span className="font-serif text-lg tracking-tight text-white">Marcelle</span>
               </div>
-              <p className="mt-3 text-sm text-white/30 max-w-md">L&apos;assistante IA pour EHPAD. Transmissions, formation video et lien familles -- le quotidien des soignants, simplifie.</p>
+              <p className="mt-3 text-sm text-white/30 max-w-md">L&apos;agent IA EHPAD configuré sur mesure. Transmissions, formation vidéo et lien familles — le quotidien des soignants, simplifié.</p>
             </div>
             <nav aria-label="Liens de pied de page" className="flex flex-wrap gap-6 text-sm text-white/40">
               <a href="#piliers" className="hover:text-white/70 transition-colors">Les 3 piliers</a>
-              <a href="#comment" className="hover:text-white/70 transition-colors">Comment ca marche</a>
-              <a href="#conformite" className="hover:text-white/70 transition-colors">Conformite</a>
+              <a href="#comment" className="hover:text-white/70 transition-colors">Comment ça marche</a>
+              <a href="#conformite" className="hover:text-white/70 transition-colors">Conformité</a>
               <a href="#faq" className="hover:text-white/70 transition-colors">FAQ</a>
               <a href="#demo" className="hover:text-white/70 transition-colors">Contact</a>
             </nav>
           </div>
           <div className="mt-10 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-white/20">&copy; {new Date().getFullYear()} Marcelle. Tous droits reserves.</p>
+            <p className="text-xs text-white/20">&copy; {new Date().getFullYear()} Marcelle. Tous droits réservés.</p>
             <div className="flex gap-4">
-              <Link href="/confidentialite" className="text-xs text-white/20 hover:text-white/50 transition-colors">Confidentialite</Link>
+              <Link href="/confidentialite" className="text-xs text-white/20 hover:text-white/50 transition-colors">Confidentialité</Link>
               <Link href="/cgv" className="text-xs text-white/20 hover:text-white/50 transition-colors">CGU</Link>
             </div>
           </div>

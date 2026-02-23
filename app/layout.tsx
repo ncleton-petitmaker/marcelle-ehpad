@@ -12,12 +12,13 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://srv756238.hstgr.cloud"),
   title:
-    "Marcelle - IA pour EHPAD | Transmissions, formation et lien familles",
+    "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
   description:
-    "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles. Conforme RGPD et IA Act.",
+    "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Configuration sur mesure, compatible avec tous les logiciels de soins. Conforme RGPD et IA Act.",
   keywords: [
-    "IA EHPAD",
-    "intelligence artificielle maison de retraite",
+    "agent IA EHPAD",
+    "agent IA maison de retraite",
+    "intelligence artificielle EHPAD",
     "transmissions soignantes IA",
     "formation EHPAD",
     "lien familles EHPAD",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     "assistant IA soignant",
     "transmissions vocales EHPAD",
     "RGPD EHPAD",
-    "IA Act sante",
+    "IA Act santé",
   ],
   robots: { index: true, follow: true },
   icons: {
@@ -37,9 +38,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Marcelle - IA pour EHPAD | Transmissions, formation et lien familles",
+      "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
     description:
-      "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles.",
+      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Compatible avec tous les logiciels de soins.",
     url: "https://srv756238.hstgr.cloud",
     siteName: "Marcelle",
     locale: "fr_FR",
@@ -48,9 +49,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Marcelle - IA pour EHPAD | Transmissions, formation et lien familles",
+      "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
     description:
-      "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles.",
+      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Compatible avec tous les logiciels de soins.",
   },
 };
 
