@@ -10,7 +10,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://srv756238.hstgr.cloud"),
+  metadataBase: new URL("https://marcelle.ai"),
   title:
     "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
   description:
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
   alternates: {
-    canonical: "https://srv756238.hstgr.cloud",
+    canonical: "https://marcelle.ai",
   },
   openGraph: {
     title:
       "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
     description:
       "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Compatible avec tous les logiciels de soins.",
-    url: "https://srv756238.hstgr.cloud",
+    url: "https://marcelle.ai",
     siteName: "Marcelle",
     locale: "fr_FR",
     type: "website",

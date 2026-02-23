@@ -174,7 +174,7 @@ export default function LandingPage() {
     operatingSystem: "Web",
     description:
       "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Configuration sur mesure, compatible avec tous les logiciels de soins. Conforme RGPD et IA Act.",
-    url: "https://srv756238.hstgr.cloud",
+    url: "https://marcelle.ai",
     offers: {
       "@type": "Offer",
       category: "SaaS",
