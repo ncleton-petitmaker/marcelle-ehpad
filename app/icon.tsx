@@ -14,7 +14,7 @@ export default function Icon() {
           width: 64,
           height: 64,
           borderRadius: "50%",
-          background: "#0A0A0A",
+          background: "#5B8C6F",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -24,8 +24,8 @@ export default function Icon() {
           style={{
             fontSize: 38,
             fontFamily: "Georgia, 'Times New Roman', serif",
-            fontWeight: 600,
-            color: "#C8A97E",
+            fontWeight: 400,
+            color: "#FFFFFF",
             lineHeight: 1,
             marginTop: -2,
           }}

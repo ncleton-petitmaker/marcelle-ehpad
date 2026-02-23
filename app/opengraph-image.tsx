@@ -2,7 +2,8 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Marcelle - L'agent IA pour les hôtels d'exception";
+export const alt =
+  "Marcelle - L'assistante IA pour EHPAD";
 export const size = {
   width: 1200,
   height: 630,
@@ -20,12 +21,12 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0A0A0A",
+          background: "#FAF7F2",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* Subtle radial gold glow behind the text */}
+        {/* Subtle radial sauge glow */}
         <div
           style={{
             position: "absolute",
@@ -36,7 +37,7 @@ export default function OpenGraphImage() {
             height: 600,
             borderRadius: "50%",
             background:
-              "radial-gradient(circle, rgba(200,169,126,0.08) 0%, rgba(200,169,126,0.03) 40%, transparent 70%)",
+              "radial-gradient(circle, rgba(91,140,111,0.08) 0%, rgba(91,140,111,0.03) 40%, transparent 70%)",
             display: "flex",
           }}
         />
@@ -45,8 +46,9 @@ export default function OpenGraphImage() {
         <div
           style={{
             width: 60,
-            height: 1,
-            background: "linear-gradient(90deg, transparent, #C8A97E, transparent)",
+            height: 2,
+            background:
+              "linear-gradient(90deg, transparent, #5B8C6F, transparent)",
             marginBottom: 40,
             display: "flex",
           }}
@@ -57,8 +59,8 @@ export default function OpenGraphImage() {
           style={{
             fontSize: 80,
             fontFamily: "Georgia, 'Times New Roman', serif",
-            fontWeight: 700,
-            color: "#C8A97E",
+            fontWeight: 400,
+            color: "#2A2A35",
             letterSpacing: 6,
             lineHeight: 1,
             display: "flex",
@@ -71,8 +73,9 @@ export default function OpenGraphImage() {
         <div
           style={{
             width: 120,
-            height: 1,
-            background: "linear-gradient(90deg, transparent, #C8A97E60, transparent)",
+            height: 2,
+            background:
+              "linear-gradient(90deg, transparent, #5B8C6F80, transparent)",
             marginTop: 32,
             marginBottom: 32,
             display: "flex",
@@ -85,26 +88,56 @@ export default function OpenGraphImage() {
             fontSize: 24,
             fontFamily: "Georgia, 'Times New Roman', serif",
             fontWeight: 400,
-            color: "rgba(255, 255, 255, 0.85)",
+            color: "#555566",
             letterSpacing: 2,
             display: "flex",
           }}
         >
-          {"L'agent IA pour les hôtels d'exception"}
+          {"L'assistante IA qui prend soin de vos equipes"}
+        </div>
+
+        {/* 3 pillars */}
+        <div
+          style={{
+            display: "flex",
+            gap: 24,
+            marginTop: 48,
+          }}
+        >
+          {["Transmissions", "Formation", "Familles"].map((label) => (
+            <div
+              key={label}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 8,
+                padding: "10px 20px",
+                borderRadius: 999,
+                background: "#5B8C6F",
+                color: "#FFFFFF",
+                fontSize: 16,
+                fontFamily: "system-ui, sans-serif",
+                fontWeight: 500,
+              }}
+            >
+              {label}
+            </div>
+          ))}
         </div>
 
         {/* Bottom decorative line */}
         <div
           style={{
             width: 60,
-            height: 1,
-            background: "linear-gradient(90deg, transparent, #C8A97E, transparent)",
+            height: 2,
+            background:
+              "linear-gradient(90deg, transparent, #5B8C6F, transparent)",
             marginTop: 40,
             display: "flex",
           }}
         />
 
-        {/* Subtle corner accents - top left */}
+        {/* Corner accents */}
         <div
           style={{
             position: "absolute",
@@ -112,13 +145,11 @@ export default function OpenGraphImage() {
             left: 40,
             width: 30,
             height: 30,
-            borderTop: "1px solid rgba(200,169,126,0.3)",
-            borderLeft: "1px solid rgba(200,169,126,0.3)",
+            borderTop: "2px solid rgba(91,140,111,0.3)",
+            borderLeft: "2px solid rgba(91,140,111,0.3)",
             display: "flex",
           }}
         />
-
-        {/* Top right corner */}
         <div
           style={{
             position: "absolute",
@@ -126,13 +157,11 @@ export default function OpenGraphImage() {
             right: 40,
             width: 30,
             height: 30,
-            borderTop: "1px solid rgba(200,169,126,0.3)",
-            borderRight: "1px solid rgba(200,169,126,0.3)",
+            borderTop: "2px solid rgba(91,140,111,0.3)",
+            borderRight: "2px solid rgba(91,140,111,0.3)",
             display: "flex",
           }}
         />
-
-        {/* Bottom left corner */}
         <div
           style={{
             position: "absolute",
@@ -140,13 +169,11 @@ export default function OpenGraphImage() {
             left: 40,
             width: 30,
             height: 30,
-            borderBottom: "1px solid rgba(200,169,126,0.3)",
-            borderLeft: "1px solid rgba(200,169,126,0.3)",
+            borderBottom: "2px solid rgba(91,140,111,0.3)",
+            borderLeft: "2px solid rgba(91,140,111,0.3)",
             display: "flex",
           }}
         />
-
-        {/* Bottom right corner */}
         <div
           style={{
             position: "absolute",
@@ -154,8 +181,8 @@ export default function OpenGraphImage() {
             right: 40,
             width: 30,
             height: 30,
-            borderBottom: "1px solid rgba(200,169,126,0.3)",
-            borderRight: "1px solid rgba(200,169,126,0.3)",
+            borderBottom: "2px solid rgba(91,140,111,0.3)",
+            borderRight: "2px solid rgba(91,140,111,0.3)",
             display: "flex",
           }}
         />

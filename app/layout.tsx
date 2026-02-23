@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({
+const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-serif",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://marcelle.ai"),
+  metadataBase: new URL("https://srv756238.hstgr.cloud"),
   title:
-    "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
+    "Marcelle - IA pour EHPAD | Transmissions, formation et lien familles",
   description:
-    "Marcelle est l'agent IA hôtel qui transforme l'expérience client et la gestion d'équipe. Concierge IA WhatsApp disponible 24h/24, multilingue, conforme RGPD. Chatbot hôtel WhatsApp conçu pour l'hôtellerie de luxe.",
+    "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles. Conforme RGPD et IA Act.",
   keywords: [
-    "agent IA hôtel",
-    "agent IA hôtellerie",
-    "concierge IA WhatsApp",
-    "intelligence artificielle hôtel",
-    "chatbot hôtel WhatsApp",
-    "concierge virtuel hôtel",
-    "IA hôtellerie de luxe",
-    "assistant IA hôtel",
-    "WhatsApp hôtel",
-    "chatbot hôtelier",
+    "IA EHPAD",
+    "intelligence artificielle maison de retraite",
+    "transmissions soignantes IA",
+    "formation EHPAD",
+    "lien familles EHPAD",
+    "logiciel EHPAD",
+    "assistant IA soignant",
+    "transmissions vocales EHPAD",
+    "RGPD EHPAD",
+    "IA Act sante",
   ],
   robots: { index: true, follow: true },
   icons: {
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
   alternates: {
-    canonical: "https://marcelle.ai",
+    canonical: "https://srv756238.hstgr.cloud",
   },
   openGraph: {
     title:
-      "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
+      "Marcelle - IA pour EHPAD | Transmissions, formation et lien familles",
     description:
-      "Marcelle est l'agent IA hôtel qui transforme l'expérience client et la gestion d'équipe. Concierge IA WhatsApp disponible 24h/24, multilingue, conforme RGPD.",
-    url: "https://marcelle.ai",
+      "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles.",
+    url: "https://srv756238.hstgr.cloud",
     siteName: "Marcelle",
     locale: "fr_FR",
     type: "website",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Marcelle - Agent IA hôtel | Concierge IA WhatsApp pour hôtels d'exception",
+      "Marcelle - IA pour EHPAD | Transmissions, formation et lien familles",
     description:
-      "Marcelle est l'agent IA hôtel qui transforme l'expérience client et la gestion d'équipe. Concierge IA WhatsApp disponible 24h/24, multilingue, conforme RGPD.",
+      "Marcelle est l'assistante IA pour EHPAD qui simplifie les transmissions soignantes, centralise la formation video et maintient le lien avec les familles.",
   },
 };
 
@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${inter.variable} ${playfair.variable} ${inter.className}`}
+        className={`${inter.variable} ${dmSerif.variable} ${inter.className}`}
       >
         {children}
       </body>
