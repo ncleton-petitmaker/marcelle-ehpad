@@ -199,7 +199,7 @@ export default function LandingPage() {
         name: "Marcelle s'intègre-t-elle avec notre logiciel de soins existant ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Oui, Marcelle est conçue pour s'adapter à tous les logiciels de soins du marché : NetSoins, Titan, Livia, Easily, Ogirys, Teranga, et bien d'autres. La configuration est réalisée sur mesure pour votre établissement, vos process et vos outils existants. Les transmissions vocales remontent automatiquement dans votre logiciel, sans double saisie.",
+          text: "Oui, Marcelle est conçue pour s'adapter à tous les logiciels de soins du marché. La configuration est réalisée sur mesure pour votre établissement, vos process et vos outils existants. Les transmissions vocales remontent automatiquement dans votre logiciel, sans double saisie.",
         },
       },
       {
@@ -207,7 +207,7 @@ export default function LandingPage() {
         name: "Concrètement, comment une aide-soignante utilise Marcelle ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "En fin de tournée, l'aide-soignante parle à Marcelle comme à une collègue : « Mme Dupont a bien mangé ce midi, elle a marché 10 minutes dans le couloir, elle était de bonne humeur. » Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du résident.",
+          text: "L'aide-soignante porte un petit biper. Entre deux soins, elle appuie et parle : « Mme Dupont a bien mangé ce midi, elle a marché 10 minutes dans le couloir, elle était de bonne humeur. » Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du résident.",
         },
       },
       {
@@ -231,7 +231,7 @@ export default function LandingPage() {
         name: "Et si les soignants ne sont pas à l'aise avec la technologie ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "C'est justement la force de Marcelle : il suffit de parler. Pas d'écran complexe, pas de formulaire à remplir, pas d'application à télécharger. Si vous savez parler, vous savez utiliser Marcelle. La formation dure 45 minutes et les soignants sont autonomes immédiatement.",
+          text: "C'est justement la force de Marcelle : un biper, un bouton, on parle. Pas d'écran complexe, pas de formulaire à remplir, pas d'application à télécharger. Si vous savez parler, vous savez utiliser Marcelle. La formation dure 45 minutes et les soignants sont autonomes immédiatement.",
         },
       },
       {
@@ -356,7 +356,7 @@ export default function LandingPage() {
                 <MicIcon className="w-6 h-6" />
               </div>
               <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">Des transmissions complètes, sans paperasse</h3>
-              <p className="text-white/50 leading-relaxed mb-6">Les soignants parlent à Marcelle au lieu de remplir des formulaires. L&apos;IA structure, classe et enrichit chaque transmission.</p>
+              <p className="text-white/50 leading-relaxed mb-6">Un biper, un bouton : les soignants parlent à Marcelle au lieu de remplir des formulaires. L&apos;IA structure, classe et enrichit chaque transmission.</p>
               <div className="space-y-3">
                 {[
                   "Parler au lieu d'écrire",
@@ -429,8 +429,8 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
               { step: "1", icon: <BuildingIcon className="w-5 h-5" />, title: "On comprend votre établissement", desc: "Visite, échange avec les équipes, analyse de vos process spécifiques et de vos logiciels en place." },
-              { step: "2", icon: <CogIcon className="w-5 h-5" />, title: "Configuration sur mesure", desc: "Marcelle s'adapte à vos process, se connecte à votre logiciel de soins (NetSoins, Titan, Livia, Easily, Ogirys…) et intègre vos procédures." },
-              { step: "3", icon: <MicIcon className="w-5 h-5" />, title: "Vos équipes parlent à Marcelle", desc: "Formation des soignants en 45 minutes. Ils parlent, Marcelle fait le reste. Aucune compétence technique requise." },
+              { step: "2", icon: <CogIcon className="w-5 h-5" />, title: "Configuration sur mesure", desc: "Marcelle s'adapte à vos process, se connecte à votre logiciel de soins existant et intègre vos procédures. Quel que soit votre outil, on s'y adapte." },
+              { step: "3", icon: <MicIcon className="w-5 h-5" />, title: "Vos équipes parlent à Marcelle", desc: "Formation des soignants en 45 minutes. Chaque soignant porte un petit biper : il appuie, il parle, c'est transmis. Aucune compétence technique requise." },
               { step: "4", icon: <HeartIcon className="w-5 h-5" />, title: "Les familles reçoivent ce que vous choisissez", desc: "Via WhatsApp ou tablette sur place : activités, moments partagés, infos sélectionnées par vos soignants. Vous gardez le contrôle." },
             ].map((s, i) => (
               <BentoCard key={i} variant="white" className="p-8">
@@ -461,7 +461,7 @@ export default function LandingPage() {
             <BentoCard variant="glass" className="p-8 md:p-10 lg:col-span-2">
               <Badge variant="light">Transmissions</Badge>
               <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Les transmissions bâclées</h3>
-              <p className="mt-3 text-white/50 leading-relaxed">En fin de shift, la fatigue s&apos;accumule. Les transmissions sont rapides, incomplètes, parfois oubliées. L&apos;équipe de nuit prend le relais sans toutes les informations.</p>
+              <p className="mt-3 text-white/50 leading-relaxed">En fin de journée, la fatigue s&apos;accumule. Les transmissions sont rapides, incomplètes, parfois oubliées. L&apos;équipe suivante prend le relais sans toutes les informations.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-sauge mb-1">Avec Marcelle</p>
                 <p className="text-sm text-white/70">Les soignants parlent en 2 minutes au lieu d&apos;écrire en 15. Marcelle structure tout automatiquement, rien n&apos;est oublié.</p>
@@ -580,7 +580,7 @@ export default function LandingPage() {
             {/* PLACEHOLDER TESTIMONIALS - Replace with real ones */}
             {([
               {
-                quote: "Depuis Marcelle, mes aides-soignantes passent 2 minutes sur les transmissions au lieu de 15. Et les informations sont bien plus complètes qu'avant. La configuration s'est adaptée parfaitement à notre logiciel NetSoins.",
+                quote: "Depuis Marcelle, mes aides-soignantes passent 2 minutes sur les transmissions au lieu de 15. Et les informations sont bien plus complètes qu'avant. La configuration s'est adaptée parfaitement à notre logiciel existant.",
                 name: "Sophie M.",
                 role: "Directrice d'EHPAD",
                 location: "Île-de-France",
@@ -632,12 +632,12 @@ export default function LandingPage() {
               {
                 question: "Marcelle s'intègre-t-elle avec notre logiciel de soins existant ?",
                 answer:
-                  "Oui, Marcelle est conçue pour s'adapter à tous les logiciels de soins du marché : NetSoins, Titan, Livia, Easily, Ogirys, Teranga, et bien d'autres. La configuration est réalisée sur mesure pour votre établissement : vos process, vos formulaires, vos habitudes. Les transmissions vocales remontent automatiquement dans votre outil existant, sans double saisie.",
+                  "Oui, Marcelle est conçue pour s'adapter à tous les logiciels de soins du marché. La configuration est réalisée sur mesure pour votre établissement : vos process, vos formulaires, vos habitudes. Les transmissions vocales remontent automatiquement dans votre outil existant, sans double saisie.",
               },
               {
                 question: "Concrètement, comment une aide-soignante utilise Marcelle ?",
                 answer:
-                  "En fin de tournée, l'aide-soignante parle à Marcelle comme à une collègue : « Mme Dupont a bien mangé ce midi, elle a marché 10 minutes dans le couloir, elle était de bonne humeur. » Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du résident.",
+                  "L'aide-soignante porte un petit biper. Entre deux soins, elle appuie et parle : « Mme Dupont a bien mangé ce midi, elle a marché 10 minutes dans le couloir, elle était de bonne humeur. » Marcelle structure automatiquement cette information en transmission professionnelle et la classe dans le dossier du résident.",
               },
               {
                 question: "Les données de santé sont-elles sécurisées ?",
@@ -652,7 +652,7 @@ export default function LandingPage() {
               {
                 question: "Et si les soignants ne sont pas à l'aise avec la technologie ?",
                 answer:
-                  "C'est justement la force de Marcelle : il suffit de parler. Pas d'écran complexe, pas de formulaire à remplir, pas d'application à télécharger. Si vous savez parler, vous savez utiliser Marcelle. La formation dure 45 minutes et les soignants sont autonomes immédiatement.",
+                  "C'est justement la force de Marcelle : un biper, un bouton, on parle. Pas d'écran complexe, pas de formulaire à remplir, pas d'application à télécharger. Si vous savez parler, vous savez utiliser Marcelle. La formation dure 45 minutes et les soignants sont autonomes immédiatement.",
               },
               {
                 question: "Combien coûte Marcelle ?",
