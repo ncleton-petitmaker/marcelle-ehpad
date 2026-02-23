@@ -2,8 +2,7 @@
 
 import { useCallback } from "react";
 
-const SCHEDULE_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3f9yb8AGHLQx1ulUJR4v0XfP6Lewtb8pj2zNiqK3uV4qz4gU4lK9iknrVDDhQVBobQB53aCF46?gv=true";
+const SCHEDULE_URL = "https://calendar.app.google/HbjEiw8LgASC22mW9";
 
 export function DemoTrigger({
   children,
