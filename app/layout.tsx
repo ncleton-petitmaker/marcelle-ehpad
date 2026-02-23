@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Marcelle - Agent IA EHPAD",
+        alt: "Aide-soignante utilisant le biper Marcelle dans la chambre d'une résidente en EHPAD",
       },
     ],
   },
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
     description:
       "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
-    images: ["/opengraph-image"],
+    images: ["/og-image.jpg"],
   },
 };
 
