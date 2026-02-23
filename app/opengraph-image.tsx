@@ -2,8 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt =
-  "Marcelle - L'assistante IA pour EHPAD";
+export const alt = "Marcelle - Agent IA EHPAD";
 export const size = {
   width: 1200,
   height: 630,
@@ -82,6 +81,23 @@ export default function OpenGraphImage() {
           }}
         />
 
+        {/* Agent IA EHPAD badge */}
+        <div
+          style={{
+            fontSize: 20,
+            fontFamily: "system-ui, sans-serif",
+            fontWeight: 600,
+            color: "#5B8C6F",
+            letterSpacing: 3,
+            textTransform: "uppercase",
+            marginTop: 16,
+            marginBottom: 8,
+            display: "flex",
+          }}
+        >
+          Agent IA EHPAD
+        </div>
+
         {/* Subtitle */}
         <div
           style={{
@@ -93,7 +109,9 @@ export default function OpenGraphImage() {
             display: "flex",
           }}
         >
-          {"L'assistante IA qui prend soin de vos equipes"}
+          {
+            "L\u2019agent IA EHPAD qui prend soin de vos \u00e9quipes"
+          }
         </div>
 
         {/* 3 pillars */}
@@ -136,6 +154,21 @@ export default function OpenGraphImage() {
             display: "flex",
           }}
         />
+
+        {/* Domain text */}
+        <div
+          style={{
+            fontSize: 16,
+            fontFamily: "system-ui, sans-serif",
+            fontWeight: 400,
+            color: "#5B8C6F",
+            letterSpacing: 2,
+            marginTop: 16,
+            display: "flex",
+          }}
+        >
+          marcelle.ai
+        </div>
 
         {/* Corner accents */}
         <div

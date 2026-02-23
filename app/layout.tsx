@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title:
     "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
   description:
-    "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Configuration sur mesure, compatible avec tous les logiciels de soins. Conforme RGPD et IA Act.",
+    "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
   keywords: [
     "agent IA EHPAD",
     "agent IA maison de retraite",
@@ -35,23 +35,35 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://marcelle.ai",
+    languages: {
+      fr: "https://marcelle.ai",
+    },
   },
   openGraph: {
     title:
       "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
     description:
-      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Compatible avec tous les logiciels de soins.",
+      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
     url: "https://marcelle.ai",
     siteName: "Marcelle",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Marcelle - Agent IA EHPAD",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title:
       "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
     description:
-      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation vidéo et maintient le lien avec les familles. Compatible avec tous les logiciels de soins.",
+      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
+    images: ["/opengraph-image"],
   },
 };
 
