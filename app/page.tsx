@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { VideoPlayer } from "./VideoPlayer";
+
 import { DemoTrigger } from "./DemoButton";
 
 /* ------------------------------------------------------------------ */
@@ -323,18 +323,25 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ========== 3. VIDEO DEMO ========== */}
-      <section aria-label="Démonstration vidéo de l'agent IA EHPAD Marcelle" className="py-12 md:py-20 lg:py-28 bg-cream">
+      {/* ========== 3. ILLUSTRATION ========== */}
+      <section aria-label="Marcelle en situation dans un EHPAD" className="py-12 md:py-20 lg:py-28 bg-cream">
         <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="text-center mb-10">
-            <Badge variant="sauge"><PlayIcon className="w-3.5 h-3.5" /> Découvrir Marcelle</Badge>
+            <Badge variant="sauge"><MicIcon className="w-3.5 h-3.5" /> En situation</Badge>
             <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] leading-tight text-encre">
-              Marcelle en 90 secondes
+              Un biper, un bouton, c&apos;est transmis
             </h2>
-            <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">Découvrez comment cet agent IA EHPAD transforme le quotidien des soignants.</p>
+            <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">Entre deux soins, l&apos;aide-soignante appuie et parle. Marcelle fait le reste.</p>
           </div>
           <div className="relative rounded-3xl overflow-hidden border border-lin shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
-            <VideoPlayer playbackId="TGgf3vbYq3MrFukxQ8aV00uMYtApobtcKcQPhTo1icB00" />
+            <img
+              src="/hero-ehpad.webp"
+              alt="Aide-soignante utilisant le biper Marcelle dans la chambre d'une résidente en EHPAD"
+              width={1200}
+              height={1200}
+              className="w-full h-auto"
+              loading="eager"
+            />
           </div>
         </div>
       </section>
