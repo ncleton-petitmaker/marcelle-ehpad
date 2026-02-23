@@ -295,7 +295,7 @@ export default function LandingPage() {
               <span className="text-sauge">de vos équipes</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-graphite max-w-2xl mx-auto leading-relaxed">
-              Marcelle aide les soignants à transmettre, se former et communiquer avec les familles. Configurée sur mesure pour votre établissement et vos logiciels.
+              Marcelle aide les soignants à transmettre et se former. Elle informe les familles selon vos règles. Configurée sur mesure pour votre établissement et vos logiciels.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <DemoTrigger className="group inline-flex items-center gap-2 bg-sauge text-white px-7 py-3.5 rounded-xl font-medium text-[15px] hover:bg-sauge-deep transition-all duration-300 shadow-[0_2px_8px_rgba(91,140,111,0.25)] cursor-pointer">
@@ -316,8 +316,8 @@ export default function LandingPage() {
               <p className="mt-2 text-sm text-graphite">de paperasse pour les soignants</p>
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
-              <div className="text-4xl md:text-5xl font-serif text-sauge">100%</div>
-              <p className="mt-2 text-sm text-graphite">des familles informées en continu</p>
+              <div className="text-4xl md:text-5xl font-serif text-sauge">45 min</div>
+              <p className="mt-2 text-sm text-graphite">pour former une équipe complète</p>
             </BentoCard>
           </div>
         </div>
@@ -397,13 +397,13 @@ export default function LandingPage() {
               <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-sauge/20 text-sauge shrink-0 mb-5">
                 <HeartIcon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">Le lien avec les familles, enfin simple</h3>
-              <p className="text-white/50 leading-relaxed mb-6">Les proches interrogent Marcelle pour savoir comment se passe la journée de leur parent. Plus d&apos;inquiétude silencieuse.</p>
+              <h3 className="font-serif text-xl md:text-2xl leading-snug text-white mb-3">Le lien avec les familles, maîtrisé par l&apos;établissement</h3>
+              <p className="text-white/50 leading-relaxed mb-6">Vous choisissez ce que les familles voient : activités de la semaine, moments partagés, informations sélectionnées par les soignants. Via WhatsApp ou sur une tablette sur place — c&apos;est vous qui décidez.</p>
               <div className="space-y-3">
                 {[
-                  "Interlocuteur disponible 24h/24",
-                  "Partager les beaux moments",
-                  "Demandes et incidents tracés",
+                  "Vous contrôlez les informations partagées",
+                  "WhatsApp ou tablette sur place, au choix",
+                  "Mise en place simple, sans risque",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <CheckIcon className="w-4 h-4 text-sauge shrink-0 mt-0.5" />
@@ -431,7 +431,7 @@ export default function LandingPage() {
               { step: "1", icon: <BuildingIcon className="w-5 h-5" />, title: "On comprend votre établissement", desc: "Visite, échange avec les équipes, analyse de vos process spécifiques et de vos logiciels en place." },
               { step: "2", icon: <CogIcon className="w-5 h-5" />, title: "Configuration sur mesure", desc: "Marcelle s'adapte à vos process, se connecte à votre logiciel de soins (NetSoins, Titan, Livia, Easily, Ogirys…) et intègre vos procédures." },
               { step: "3", icon: <MicIcon className="w-5 h-5" />, title: "Vos équipes parlent à Marcelle", desc: "Formation des soignants en 45 minutes. Ils parlent, Marcelle fait le reste. Aucune compétence technique requise." },
-              { step: "4", icon: <HeartIcon className="w-5 h-5" />, title: "Les familles sont informées", desc: "Les proches accèdent à Marcelle et posent leurs questions en toute sérénité, sans déranger les équipes." },
+              { step: "4", icon: <HeartIcon className="w-5 h-5" />, title: "Les familles reçoivent ce que vous choisissez", desc: "Via WhatsApp ou tablette sur place : activités, moments partagés, infos sélectionnées par vos soignants. Vous gardez le contrôle." },
             ].map((s, i) => (
               <BentoCard key={i} variant="white" className="p-8">
                 <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-sauge/10 text-sauge shrink-0 mb-5">
@@ -487,11 +487,11 @@ export default function LandingPage() {
             {/* Les familles dans le noir */}
             <BentoCard variant="glass" className="p-8 md:p-10">
               <Badge variant="light">Familles</Badge>
-              <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Les familles dans le noir</h3>
-              <p className="mt-3 text-white/50 leading-relaxed">Les proches appellent, inquiets. L&apos;équipe est en soin et ne peut pas répondre. L&apos;anxiété monte des deux côtés.</p>
+              <h3 className="mt-5 font-serif text-xl md:text-2xl leading-snug text-white">Les familles qui appellent sans cesse</h3>
+              <p className="mt-3 text-white/50 leading-relaxed">Les proches appellent, inquiets. L&apos;équipe est en soin et ne peut pas répondre. Les appels s&apos;accumulent, la frustration aussi.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-terracotta mb-1">Avec Marcelle</p>
-                <p className="text-sm text-white/70">Les familles interrogent Marcelle à tout moment. Elles savent comment va leur proche, sans déranger les équipes.</p>
+                <p className="text-sm text-white/70">Les familles reçoivent sur WhatsApp les activités de la semaine et les infos que vos soignants choisissent de partager. Moins d&apos;appels, plus de sérénité.</p>
               </div>
             </BentoCard>
 
@@ -524,7 +524,7 @@ export default function LandingPage() {
               { icon: <DocumentIcon className="w-5 h-5" />, title: "3x plus de détails", desc: "En parlant naturellement, les soignants livrent bien plus d'informations qu'en cochant des cases.", variant: "white" as const },
               { icon: <RefreshIcon className="w-5 h-5" />, title: "Zéro perte entre équipes", desc: "Le récap de début de poste est automatique. L'équipe de nuit sait tout ce qui s'est passé le jour.", variant: "white" as const },
               { icon: <AcademicCapIcon className="w-5 h-5" />, title: "Formation permanente", desc: "Chaque procédure est accessible en vidéo. Les nouveaux apprennent à leur rythme, sans mobiliser les anciens.", variant: "white" as const },
-              { icon: <HeartIcon className="w-5 h-5" />, title: "Familles rassurées", desc: "Les proches savent comment va leur parent à tout moment. Moins d'appels anxieux, plus de confiance.", variant: "terracotta" as const },
+              { icon: <HeartIcon className="w-5 h-5" />, title: "Familles rassurées, équipes protégées", desc: "Les proches reçoivent les infos que vous choisissez de partager. Moins d'appels, plus de confiance, zéro risque.", variant: "terracotta" as const },
               { icon: <StarIcon className="w-5 h-5" />, title: "Attractivité employeur", desc: "Un EHPAD qui investit dans ses outils attire plus de candidats. Marcelle est un argument de recrutement.", variant: "white" as const },
             ]).map((b, i) => (
               <BentoCard key={i} variant={b.variant} className="p-6 md:p-8">
@@ -592,7 +592,7 @@ export default function LandingPage() {
                 location: "Provence",
               },
               {
-                quote: "Les familles sont tellement plus sereines depuis qu'elles peuvent interroger Marcelle. Les appels anxieux ont diminué de moitié. C'est un soulagement pour tout le monde.",
+                quote: "On envoie aux familles les activités de la semaine et quelques nouvelles choisies par les soignants. Les appels anxieux ont diminué de moitié. C'est un soulagement pour tout le monde.",
                 name: "Claire D.",
                 role: "Cadre de santé",
                 location: "Normandie",
@@ -695,7 +695,7 @@ export default function LandingPage() {
               <h2 className="mt-6 font-serif text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-encre">
                 Simplifiez le quotidien<br className="hidden md:block" /> de vos équipes
               </h2>
-              <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto leading-relaxed">Découvrez comment Marcelle peut transformer les transmissions, la formation et le lien familles dans votre établissement. Configuration sur mesure, compatible avec tous vos logiciels. Démonstration personnalisée en 30&nbsp;minutes.</p>
+              <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto leading-relaxed">Découvrez comment Marcelle peut transformer les transmissions et la formation dans votre établissement — et rassurer les familles, sans risque. Configuration sur mesure, compatible avec tous vos logiciels. Démonstration personnalisée en 30&nbsp;minutes.</p>
               <div className="mt-10">
                 <DemoTrigger className="group inline-flex items-center gap-2 bg-sauge text-white px-8 py-4 rounded-xl font-medium text-[15px] hover:bg-sauge-deep transition-all duration-300 shadow-[0_2px_8px_rgba(91,140,111,0.25)] cursor-pointer">
                   Demander une démo <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
