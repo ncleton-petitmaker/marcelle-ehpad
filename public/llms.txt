@@ -1,0 +1,35 @@
+# Marcelle — Agent IA pour EHPAD
+
+> Marcelle est l'agent IA conçu pour les EHPAD (maisons de retraite). Elle simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.
+
+## Informations clés
+
+- Site : https://marcelle.ai
+- Secteur : HealthTech / MedTech — EHPAD et maisons de retraite
+- Pays : France
+- Langue : Français
+- Conformité : RGPD, IA Act, Hébergement de Données de Santé (HDS)
+
+## Les 3 missions de Marcelle
+
+### 1. Transmissions soignantes
+Les soignants parlent à Marcelle via un biper au lieu de remplir des formulaires papier ou informatiques. Marcelle transcrit, structure et enrichit automatiquement les transmissions. Résultat : 45 minutes retrouvées par soignant, par jour, et des transmissions 3 fois plus détaillées.
+
+### 2. Formation continue
+Marcelle centralise les vidéos de procédures internes. Quand un soignant pose une question, Marcelle retrouve le passage exact qui y répond. Onboarding accéléré des nouveaux arrivants, zéro compétence technique requise.
+
+### 3. Lien avec les familles
+Les proches peuvent interroger Marcelle pour savoir comment se passe le séjour de leur parent. Marcelle peut communiquer via WhatsApp ou rester dans l'établissement sur une borne, au choix de la direction. Moins d'appels anxieux, plus de sérénité.
+
+## Technologie
+
+- Agent IA conversationnel vocal (biper) et textuel
+- Hébergement des données en Europe (HDS)
+- Consentement explicite des résidents et familles
+- IA transparente et explicable (conforme IA Act)
+- Intégration avec les logiciels existants de l'établissement
+
+## Contact
+
+- Demander une démo : https://marcelle.ai (bouton "Demander une démo")
+- Email : contact@marcelle.ai
