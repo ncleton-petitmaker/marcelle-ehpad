@@ -312,8 +312,8 @@ export default function LandingPage() {
               <p className="mt-2 text-sm text-graphite">plus de détails dans les transmissions</p>
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
-              <div className="text-4xl md:text-5xl font-serif text-terracotta">-40%</div>
-              <p className="mt-2 text-sm text-graphite">de paperasse pour les soignants</p>
+              <div className="text-4xl md:text-5xl font-serif text-terracotta">45 min</div>
+              <p className="mt-2 text-sm text-graphite">retrouvées par soignant, par jour <a href="https://sosehpad.com/comment-le-huddle-de-10-minutes-revolutionne-les-transmissions-soignantes-en-ehpad/40445/" target="_blank" rel="noopener noreferrer" className="text-sauge hover:underline text-xs">(source)</a></p>
             </BentoCard>
             <BentoCard variant="white" className="p-6 md:p-8">
               <div className="text-4xl md:text-5xl font-serif text-sauge">45 min</div>
@@ -491,7 +491,7 @@ export default function LandingPage() {
               <p className="mt-3 text-white/50 leading-relaxed">Les proches appellent, inquiets. L&apos;équipe est en soin et ne peut pas répondre. Les appels s&apos;accumulent, la frustration aussi.</p>
               <div className="mt-6 p-5 rounded-2xl bg-white/[0.04] border border-white/[0.06]">
                 <p className="text-sm font-medium text-terracotta mb-1">Avec Marcelle</p>
-                <p className="text-sm text-white/70">Les familles reçoivent sur WhatsApp les activités de la semaine et les infos que vos soignants choisissent de partager. Moins d&apos;appels, plus de sérénité.</p>
+                <p className="text-sm text-white/70">Au choix : Marcelle communique avec les familles sur WhatsApp, ou reste dans l&apos;établissement sur une borne. C&apos;est vous qui décidez du canal et du contenu.</p>
               </div>
             </BentoCard>
 
