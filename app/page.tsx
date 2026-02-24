@@ -283,12 +283,7 @@ export default function LandingPage() {
       {/* ========== 1. NAVIGATION ========== */}
       <nav aria-label="Navigation principale" className="fixed top-0 inset-x-0 z-50 h-[72px] backdrop-blur-xl bg-cream/90 border-b border-lin">
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 md:px-8 lg:px-16">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-full bg-sauge flex items-center justify-center">
-              <span className="font-serif text-white text-lg leading-none mt-[-1px]">M</span>
-            </div>
-            <span className="font-serif text-xl tracking-tight text-encre">Marcelle</span>
-          </div>
+          <Image src="/logo-marcelle.png" alt="Marcelle AI" width={140} height={39} priority />
           <div className="hidden md:flex items-center gap-8">
             <a href="#piliers" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Les 3 piliers</a>
             <a href="#comment" className="text-sm text-graphite hover:text-encre transition-colors duration-200">Comment ça marche</a>
@@ -357,15 +352,17 @@ export default function LandingPage() {
             </h2>
             <p className="mt-4 text-base md:text-lg text-graphite max-w-xl mx-auto">Entre deux soins, l&apos;aide-soignante appuie et parle. Marcelle fait le reste.</p>
           </div>
-          <div className="relative rounded-3xl overflow-hidden border border-lin shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
-            <Image
-              src="/hero-ehpad.webp"
-              alt="Aide-soignante utilisant le biper Marcelle dans la chambre d'une résidente en EHPAD"
-              width={1200}
-              height={1200}
-              priority
-              className="w-full h-auto"
-            />
+          <div className="lg:max-w-2xl lg:mx-auto">
+            <div className="relative rounded-3xl overflow-hidden border border-lin shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+              <Image
+                src="/hero-ehpad.webp"
+                alt="Aide-soignante utilisant le biper Marcelle dans la chambre d'une résidente en EHPAD"
+                width={1200}
+                height={1200}
+                priority
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -743,12 +740,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-full bg-sauge flex items-center justify-center">
-                  <span className="font-serif text-white text-lg leading-none mt-[-1px]">M</span>
-                </div>
-                <span className="font-serif text-lg tracking-tight text-white">Marcelle</span>
-              </div>
+              <Image src="/logo-marcelle-white.png" alt="Marcelle AI" width={140} height={39} />
               <p className="mt-3 text-sm text-white/30 max-w-md">L&apos;agent IA EHPAD configuré sur mesure. Transmissions, formation vidéo et lien familles — le quotidien des soignants, simplifié.</p>
             </div>
             <nav aria-label="Liens de pied de page" className="flex flex-wrap gap-6 text-sm text-white/40">
