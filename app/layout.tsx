@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   ],
   robots: { index: true, follow: true },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
   },
   alternates: {
     canonical: "https://marcelle.ai",
