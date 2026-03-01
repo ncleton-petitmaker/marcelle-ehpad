@@ -11,22 +11,25 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marcelle.ai"),
-  title:
-    "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
-  description:
-    "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
+  title: "Marcelle - Agent IA medico-social | Transmissions, formation et lien familles",
+  description: "Marcelle est l'agent IA pour le medico-social qui simplifie les transmissions, centralise la formation et maintient le lien avec les familles. EHPAD, IME, MAS, FAM, ESAT, SESSAD et tous les ESMS.",
   keywords: [
+    "agent IA medico-social",
     "agent IA EHPAD",
-    "agent IA maison de retraite",
-    "intelligence artificielle EHPAD",
-    "transmissions soignantes IA",
-    "formation EHPAD",
-    "lien familles EHPAD",
-    "logiciel EHPAD",
+    "agent IA IME",
+    "agent IA MAS",
+    "agent IA ESAT",
+    "intelligence artificielle medico-social",
+    "transmissions IA",
+    "logiciel ESMS",
     "assistant IA soignant",
-    "transmissions vocales EHPAD",
-    "RGPD EHPAD",
-    "IA Act santé",
+    "transmissions vocales",
+    "RGPD medico-social",
+    "IA Act sante",
+    "agent IA etablissement medico-social",
+    "agent IA FAM",
+    "agent IA SESSAD",
+    "agent IA foyer de vie",
   ],
   robots: { index: true, follow: true },
   icons: {
@@ -40,10 +43,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
-    description:
-      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
+    title: "Marcelle - Agent IA medico-social | Transmissions, formation et lien familles",
+    description: "Marcelle est l'agent IA pour le medico-social qui simplifie les transmissions, centralise la formation et maintient le lien avec les familles. EHPAD, IME, MAS, FAM, ESAT, SESSAD et tous les ESMS.",
     url: "https://marcelle.ai",
     siteName: "Marcelle",
     locale: "fr_FR",
@@ -53,16 +54,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Aide-soignante utilisant le biper Marcelle dans la chambre d'une résidente en EHPAD",
+        alt: "Professionnelle utilisant le biper Marcelle en etablissement medico-social",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Marcelle - Agent IA EHPAD | Transmissions, formation et lien familles",
-    description:
-      "Marcelle est l'agent IA EHPAD qui simplifie les transmissions soignantes, centralise la formation et maintient le lien avec les familles.",
+    title: "Marcelle - Agent IA medico-social | Transmissions, formation et lien familles",
+    description: "Marcelle est l'agent IA pour le medico-social qui simplifie les transmissions, centralise la formation et maintient le lien avec les familles.",
     images: ["/og-image.jpg"],
   },
 };
